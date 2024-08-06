@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './styles.css'; 
 
 const SearchBar = () => {
@@ -15,12 +16,12 @@ const SearchBar = () => {
       const response = await axios.get('http://localhost:5001/api/movies/search', {
         params: { query, type: 'movie' } 
       });
-      if(response.data.length===0){
+      if (response.data.length === 0) {
         setNoResults(true);
-      }else{
-        setSearchResults(false);
+      } else {
+        setNoResults(false);
+        setSearchResults(response.data);
       }
-      setSearchResults(response.data);
     } catch (error) {
       setNoResults(true);
       console.error('Error fetching search results:', error);
@@ -37,17 +38,19 @@ const SearchBar = () => {
       />
       <button onClick={handleSearch}>Search</button>
       <div>
-        { noResults?(<p>No movies available</p>): (searchResults.map((movie) => (
-          <div
-            key={movie.imdbID}
-            onClick={() => window.open(`https://www.imdb.com/title/${movie.imdbID}`)} 
-            style={{ cursor: 'pointer', marginBottom: '10px' }}
-          >
-            <h2>{movie.Title}</h2>
-            <p>{movie.Year}</p>
-            <img src={movie.Poster} alt={movie.Title} style={{ width: '100px' }} />
-          </div>
-        )))}
+        {noResults ? (
+          <p>No movies available</p>
+        ) : (
+          searchResults.map((movie) => (
+            <div key={movie.imdbID} style={{ cursor: 'pointer', marginBottom: '10px' }}>
+              <Link to={`/movie/${movie.imdbID}`}>
+                <h2>{movie.Title}</h2>
+                <p>{movie.Year}</p>
+                <img src={movie.Poster} alt={movie.Title} style={{ width: '100px' }} />
+              </Link>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );

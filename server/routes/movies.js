@@ -3,20 +3,16 @@ const axios = require('axios');
 const Movie = require('../models/Movie');
 const router = express.Router();
 
-const apiUrl = 'http://www.omdbapi.com/';
-const apiKey = 'd60b4409';
-const CACHE_DURATION = 15 * 60 * 1000; 
-
 const fetchRecentMoviesFromAPI = async () => {
   try {
     let allMovies = [];
     let page = 1;
 
-    while (allMovies.length < 20 && page <= 5) { 
-      const response = await axios.get(apiUrl, {
+    while (allMovies.length < 20 && page <= 5) {
+      const response = await axios.get(process.env.API_URL, {
         params: {
-          apikey: apiKey,
-          s: 'movie', 
+          apikey: process.env.API_KEY,
+          s: 'movie',
           type: 'movie',
           y: '2024',
           page
@@ -32,12 +28,12 @@ const fetchRecentMoviesFromAPI = async () => {
     }
 
     const movieDetailsPromises = allMovies.map(movie =>
-      axios.get(apiUrl, { params: { apikey: apiKey, i: movie.imdbID } })
+      axios.get(process.env.API_URL, { params: { apikey: process.env.API_KEY, i: movie.imdbID } })
     );
-
+    
     const movieDetailsResponses = await Promise.all(movieDetailsPromises);
     const detailedMovies = movieDetailsResponses.map(res => res.data);
-
+    
     detailedMovies.sort((a, b) => new Date(b.Released) - new Date(a.Released));
     const recentMovies = detailedMovies.slice(0, 10);
 
@@ -62,7 +58,7 @@ const ensureRecentMoviesUpdated = async (req, res, next) => {
     const cachedMovies = await Movie.find();
     const now = Date.now();
 
-    if (cachedMovies.length === 0 || (now - cachedMovies[0].cacheTimestamp.getTime()) > CACHE_DURATION) {
+    if (cachedMovies.length === 0 || (now - cachedMovies[0].cacheTimestamp.getTime()) > process.env.CACHE_DURATION) {
       await fetchRecentMoviesFromAPI();
     }
   } catch (error) {
@@ -84,18 +80,33 @@ router.get('/recent', ensureRecentMoviesUpdated, async (req, res) => {
 
 router.get('/search', async (req, res) => {
   const { query, type } = req.query;
-  const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=${type === 'actor' ? 'movie' : type}`;
+  const apiUrl = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${query}&type=${type === 'actor' ? 'movie' : type}`;
 
   try {
     const response = await axios.get(apiUrl);
     if (response.data.Response === "False") {
       return res.status(404).json({ error: response.data.Error });
     }
-    res.json(response.data.Search); 
+    res.json(response.data.Search);
   } catch (error) {
     console.error('Error fetching search results:', error);
     res.status(500).json({ error: error.message });
   }
 });
+
+router.get('/movie/:id', async (req, res) => {
+  const { id } = req.params;
+  try {
+    const response = await axios.get(`http://www.omdbapi.com/?apikey=${process.env.API_KEY}&i=${id}`);
+    if (response.data.Response === "False") {
+      return res.status(404).json({ error: response.data.Error });
+    }
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error fetching movie details:', error);
+    res.status(500).send('Error fetching movie details');
+  }
+});
+
 
 module.exports = router;

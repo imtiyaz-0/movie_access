@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import './styles.css'; 
 
 const MovieList = () => {
@@ -28,10 +29,12 @@ const MovieList = () => {
           <p>No recent movies available.</p>
         ) : (
           movies.map((movie) => (
-            <div key={movie.imdbID} onClick={() => window.open(`https://www.imdb.com/title/${movie.imdbID}`)} style={{ cursor: 'pointer', marginBottom: '10px' }}>
-              <h2>{movie.title}</h2>
-              <p>{movie.releaseDate}</p>
-              <img src={movie.poster} alt={movie.title} />
+            <div key={movie.imdbID} style={{ cursor: 'pointer', marginBottom: '10px' }}>
+              <Link to={`/movie/${movie.imdbID}`}>
+                <h2>{movie.title}</h2>
+                <p>{movie.releaseDate}</p>
+                <img src={movie.poster} alt={movie.title} />
+              </Link>
             </div>
           ))
         )}
