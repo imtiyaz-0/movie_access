@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const Movie = require('../models/Movie');
 const router = express.Router();
-
+const logger = require('../logger');
 const fetchRecentMoviesFromAPI = async () => {
   try {
     let allMovies = [];
@@ -48,7 +48,7 @@ const fetchRecentMoviesFromAPI = async () => {
 
     return recentMovies;
   } catch (error) {
-    console.error('Error fetching movies from OMDb API:', error);
+    logger.error('Error fetching movies from OMDb API:', error);
     throw new Error('Error fetching recent movies from API');
   }
 };
@@ -62,7 +62,7 @@ const ensureRecentMoviesUpdated = async (req, res, next) => {
       await fetchRecentMoviesFromAPI();
     }
   } catch (error) {
-    console.error('Error updating recent movies:', error);
+    logger.error('Error updating recent movies:', error);
     return res.status(500).json({ message: 'Error updating recent movies', error: error.message });
   }
   next();
@@ -73,7 +73,7 @@ router.get('/recent', ensureRecentMoviesUpdated, async (req, res) => {
     const recentMovies = await Movie.find().sort({ releaseDate: -1 }).limit(10);
     res.json(recentMovies);
   } catch (error) {
-    console.error('Error fetching recent movies:', error);
+    logger.error('Error fetching recent movies:', error);
     res.status(500).json({ message: 'Error fetching recent movies', error: error.message });
   }
 });
@@ -89,7 +89,7 @@ router.get('/search', async (req, res) => {
     }
     res.json(response.data.Search);
   } catch (error) {
-    console.error('Error fetching search results:', error);
+    logger.error('Error fetching search results:', error);
     res.status(500).json({ error: error.message });
   }
 });
@@ -103,7 +103,7 @@ router.get('/movie/:id', async (req, res) => {
     }
     res.json(response.data);
   } catch (error) {
-    console.error('Error fetching movie details:', error);
+    logger.error('Error fetching movie details:', error);
     res.status(500).send('Error fetching movie details');
   }
 });
