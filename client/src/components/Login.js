@@ -1,40 +1,80 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-import { ThemeContext } from '../context/ThemeContext'; 
+import { useNavigate, useLocation } from 'react-router-dom';
+import { ThemeContext } from '../context/ThemeContext';
 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(''); // For displaying validation errors
   const navigate = useNavigate();
-  const { theme } = useContext(ThemeContext); 
+  const location = useLocation();
+
+  const { theme } = useContext(ThemeContext);
+
+  const validateForm = () => {
+    if (!username || !password) {
+      setError('Username and Password are required');
+      return false;
+    }
+    if (username.length < 3) {
+      setError('Username must be at least 3 characters long');
+      return false;
+    }
+    if (password.length < 6) {
+      setError('Password must be at least 6 characters long');
+      return false;
+    }
+   
+    return true;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(''); 
+    if (!validateForm()) return;
+
     try {
       const response = await axios.post(`http://localhost:${process.env.REACT_APP_PORT}/api/auth/login`, { username, password });
       localStorage.setItem('token', response.data.token);
-      navigate('/');
+      const from = location.state?.from || '/';
+      navigate(from);
     } catch (error) {
+      if (error.response && error.response.status === 400) {
+        setError('Incorrect username or password');
+      } else {
+        setError('Login failed. Please try again later.');
+      }
       console.error('Login error:', error);
     }
   };
 
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      navigate('/');
+    }
+  }, [navigate]);
+
   const moveToRegister = () => {
-    navigate('/register');
+    navigate('/register', { state: { from: location.state?.from } });
+  };
+
+  const backToMovieList = () => {
+    navigate('/');
   };
 
   return (
     <div style={styles.container(theme)}>
       <div style={styles.formContainer(theme)}>
         <h2 style={styles.header(theme)}>Login</h2>
+        {error && <div style={styles.error(theme)}>{error}</div>}
         <form onSubmit={handleSubmit} style={styles.form}>
           <input
             type="text"
             placeholder="Username"
             value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
+            onChange={(e) => setUsername(e.target.value)}        
             style={styles.input(theme)}
           />
           <input
@@ -42,13 +82,15 @@ const Login = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            required
             style={styles.input(theme)}
           />
           <button type="submit" style={styles.button(theme)}>Login</button>
         </form>
         <button type="button" onClick={moveToRegister} style={styles.registerButton(theme)}>
           Register!
+        </button>
+        <button type="button" onClick={backToMovieList} style={styles.backButton(theme)}>
+          Back to Movie List
         </button>
       </div>
     </div>
@@ -109,6 +151,21 @@ const styles = {
     borderRadius: '4px',
     cursor: 'pointer',
     fontSize: '1rem',
+  }),
+  backButton: (theme) => ({
+    marginTop: '10px',
+    padding: '10px',
+    backgroundColor: '#28a745',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '4px',
+    cursor: 'pointer',
+    fontSize: '1rem',
+  }),
+  error: (theme) => ({
+    color: 'red',
+    marginBottom: '10px',
+    fontSize: '0.9rem',
   }),
 };
 

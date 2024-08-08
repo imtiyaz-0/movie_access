@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useParams } from 'react-router-dom';
 import MovieList from './components/MovieList';
 import SearchBar from './components/SearchBar';
 import MovieDetails from './components/MovieDetails';
@@ -18,10 +18,10 @@ const App = () => {
       </button>
       <Router>
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Main />} />
-          <Route path="/movie/:id" element={<PrivateRoute element={<MovieDetails />} />} />
+          <Route path="/movie/:id" element={<PrivateRouteWrapper />} />
         </Routes>
       </Router>
     </div>
@@ -34,6 +34,11 @@ const Main = () => (
     <MovieList />
   </div>
 );
+
+const PrivateRouteWrapper = () => {
+  const { id } = useParams();
+  return <PrivateRoute element={<MovieDetails />} movieId={id} />;
+};
 
 const Root = () => (
   <ThemeProvider>
