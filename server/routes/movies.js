@@ -3,6 +3,7 @@ const axios = require('axios');
 const Movie = require('../models/Movie');
 const router = express.Router();
 const logger = require('../logger');
+
 const fetchRecentMoviesFromAPI = async () => {
   try {
     let allMovies = [];
@@ -68,6 +69,39 @@ const ensureRecentMoviesUpdated = async (req, res, next) => {
   next();
 };
 
+/**
+ * @swagger
+ * tags:
+ *   name: Movies
+ *   description: The movie managing API
+ */
+
+/**
+ * @swagger
+ * /api/movies/recent:
+ *   get:
+ *     summary: Get recent movies
+ *     tags: [Movies]
+ *     responses:
+ *       200:
+ *         description: List of recent movies
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   title:
+ *                     type: string
+ *                   imdbID:
+ *                     type: string
+ *                   releaseDate:
+ *                     type: string
+ *                     format: date
+ *                   poster:
+ *                     type: string
+ */
 router.get('/recent', ensureRecentMoviesUpdated, async (req, res) => {
   try {
     const recentMovies = await Movie.find().sort({ releaseDate: -1 }).limit(10);
@@ -78,6 +112,47 @@ router.get('/recent', ensureRecentMoviesUpdated, async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/movies/search:
+ *   get:
+ *     summary: Search movies by query
+ *     tags: [Movies]
+ *     parameters:
+ *       - in: query
+ *         name: query
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The search query
+ *       - in: query
+ *         name: type
+ *         schema:
+ *           type: string
+ *           enum: [movie, series, episode, actor]
+ *         required: false
+ *         description: The type of search (default is movie)
+ *     responses:
+ *       200:
+ *         description: List of search results
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   title:
+ *                     type: string
+ *                   imdbID:
+ *                     type: string
+ *                   poster:
+ *                     type: string
+ *       404:
+ *         description: No movies found
+ *       500:
+ *         description: Server error
+ */
 router.get('/search', async (req, res) => {
   const { query, type } = req.query;
   const apiUrl = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&s=${query}&type=${type === 'actor' ? 'movie' : type}`;
@@ -94,6 +169,87 @@ router.get('/search', async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /api/movies/movie/{id}:
+ *   get:
+ *     summary: Get movie details by ID
+ *     tags: [Movies]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: string
+ *         required: true
+ *         description: The movie ID
+ *     responses:
+ *       200:
+ *         description: Movie details
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 title:
+ *                   type: string
+ *                 year:
+ *                   type: string
+ *                 rated:
+ *                   type: string
+ *                 released:
+ *                   type: string
+ *                 runtime:
+ *                   type: string
+ *                 genre:
+ *                   type: string
+ *                 director:
+ *                   type: string
+ *                 writer:
+ *                   type: string
+ *                 actors:
+ *                   type: string
+ *                 plot:
+ *                   type: string
+ *                 language:
+ *                   type: string
+ *                 country:
+ *                   type: string
+ *                 awards:
+ *                   type: string
+ *                 poster:
+ *                   type: string
+ *                 ratings:
+ *                   type: array
+ *                   items:
+ *                     type: object
+ *                     properties:
+ *                       Source:
+ *                         type: string
+ *                       Value:
+ *                         type: string
+ *                 metascore:
+ *                   type: string
+ *                 imdbRating:
+ *                   type: string
+ *                 imdbVotes:
+ *                   type: string
+ *                 imdbID:
+ *                   type: string
+ *                 type:
+ *                   type: string
+ *                 dvd:
+ *                   type: string
+ *                 boxOffice:
+ *                   type: string
+ *                 production:
+ *                   type: string
+ *                 website:
+ *                   type: string
+ *       404:
+ *         description: Movie not found
+ *       500:
+ *         description: Server error
+ */
 router.get('/movie/:id', async (req, res) => {
   const { id } = req.params;
   try {
@@ -107,6 +263,5 @@ router.get('/movie/:id', async (req, res) => {
     res.status(500).send('Error fetching movie details');
   }
 });
-
 
 module.exports = router;

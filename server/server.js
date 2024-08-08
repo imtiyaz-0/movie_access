@@ -4,6 +4,7 @@ const cors = require('cors');
 const movieRoutes = require('./routes/movies');
 const authRoutes = require('./routes/auth');
 const logger = require('./logger');
+const swaggerSetup = require('./swagger');
 
 require('dotenv').config();
 
@@ -18,6 +19,8 @@ mongoose.connect(process.env.MONGODB_URI)
 
 app.use('/api/movies', movieRoutes);
 app.use('/api/auth', authRoutes);
+
+swaggerSetup(app);
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
