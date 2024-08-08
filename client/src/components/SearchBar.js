@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import LoadingSpinner from './LoadingSpinner';
-import { ThemeContext } from '../context/ThemeContext'; // Adjust the import based on your file structure
+import { ThemeContext } from '../context/ThemeContext';
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
@@ -10,7 +10,7 @@ const SearchBar = () => {
   const [noResults, setNoResults] = useState(false);
   const [loading, setLoading] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
-  const { theme } = useContext(ThemeContext); // Get the current theme
+  const { theme } = useContext(ThemeContext); 
 
   useEffect(() => {
     if (query.length > 1) {
