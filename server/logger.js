@@ -1,5 +1,8 @@
 const pino = require('pino');
-const logger =pino({
-    level:'info'
-})
+const logFilePath = './logs/app.log'; 
+
+const logger = pino({
+    level: 'info'
+}, pino.destination(logFilePath));
+
 module.exports = logger;
