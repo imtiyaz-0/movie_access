@@ -6,3 +6,10 @@
 {"level":40,"time":1723112805637,"pid":19541,"hostname":"imtiyazs-MacBook-Air.local","msg":"Login attempt with invalid username:"}
 {"level":30,"time":1723114022471,"pid":20168,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
 {"level":30,"time":1723114023105,"pid":20168,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723117920168,"pid":21657,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723117920830,"pid":21657,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723118861308,"pid":22180,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723118861932,"pid":22180,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723177945807,"pid":23085,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723177946570,"pid":23085,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723179065050,"pid":23085,"hostname":"imtiyazs-MacBook-Air.local","msg":"New user registered: Vansh"}

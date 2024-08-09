@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import LoadingSpinner from './LoadingSpinner';
 import { ThemeContext } from '../context/ThemeContext';
+import '../styles/SearchBar.css';
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
@@ -61,22 +62,22 @@ const SearchBar = () => {
   };
 
   return (
-    <div style={styles.container(theme)}>
+    <div className={`search-bar-container ${theme}`}>
       <input
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search by movie or actor"
-        style={styles.input(theme)}
+        className="search-bar-input"
       />
-      <button onClick={handleSearch} style={styles.button(theme)}>Search</button>
+      <button onClick={handleSearch} className="search-bar-button">Search</button>
       {suggestions.length > 0 && (
-        <ul style={styles.suggestions(theme)}>
+        <ul className="search-suggestions">
           {suggestions.map((suggestion) => (
             <li
               key={suggestion.imdbID}
               onClick={() => handleSuggestionClick(suggestion)}
-              style={styles.suggestion(theme)}
+              className="search-suggestion"
             >
               {suggestion.Title}
             </li>
@@ -86,20 +87,20 @@ const SearchBar = () => {
       {loading ? (
         <LoadingSpinner />
       ) : (
-        <div style={styles.resultsContainer(theme)}>
+        <div className="search-results-container">
           {noResults ? (
-            <p style={styles.noResultsText(theme)}>No movies available</p>
+            <p className="no-results-text">No movies available</p>
           ) : (
-            <div style={styles.resultsSlider}>
+            <div className="results-slider">
               {searchResults.map((movie) => (
-                <div key={movie.imdbID} style={styles.resultCard(theme)}>
-                  <Link to={`/movie/${movie.imdbID}`} style={styles.link}>
-                    <h2 style={styles.resultTitle(theme)}>{movie.Title}</h2>
-                    <p style={styles.resultYear(theme)}>{movie.Year}</p>
+                <div key={movie.imdbID} className="result-card">
+                  <Link to={`/movie/${movie.imdbID}`} className="result-link">
+                    <h2 className="result-title">{movie.Title}</h2>
+                    <p className="result-year">{movie.Year}</p>
                     <img
                       src={movie.Poster}
                       alt={movie.Title}
-                      style={styles.resultPoster}
+                      className="result-poster"
                     />
                   </Link>
                 </div>
@@ -110,85 +111,6 @@ const SearchBar = () => {
       )}
     </div>
   );
-};
-
-const styles = {
-  container: (theme) => ({
-    padding: '20px',
-    borderRadius: '8px',
-    backgroundColor: theme === 'dark' ? '#333' : '#f4f4f4',
-    color: theme === 'dark' ? '#f4f4f4' : '#333',
-    transition: 'background-color 0.3s, color 0.3s',
-  }),
-  input: (theme) => ({
-    width: '100%',
-    padding: '10px',
-    marginBottom: '10px',
-    border: `1px solid ${theme === 'dark' ? '#555' : '#ddd'}`,
-    borderRadius: '4px',
-    backgroundColor: theme === 'dark' ? '#555' : '#fff',
-    color: theme === 'dark' ? '#ddd' : '#333',
-  }),
-  button: (theme) => ({
-    padding: '10px',
-    backgroundColor: '#007bff',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    fontSize: '1rem',
-  }),
-  suggestions: (theme) => ({
-    listStyle: 'none',
-    padding: 0,
-    margin: 0,
-    border: `1px solid ${theme === 'dark' ? '#555' : '#ddd'}`,
-    borderRadius: '4px',
-    backgroundColor: theme === 'dark' ? '#444' : '#fff',
-    maxHeight: '200px',
-    overflowY: 'auto',
-  }),
-  suggestion: (theme) => ({
-    padding: '10px',
-    cursor: 'pointer',
-    color: theme === 'dark' ? '#ddd' : '#333',
-  }),
-  resultsContainer: (theme) => ({
-    marginTop: '20px',
-  }),
-  noResultsText: (theme) => ({
-    color: theme === 'dark' ? '#ddd' : '#333',
-  }),
-  resultsSlider: {
-    display: 'flex',
-    overflowX: 'auto',
-    padding: '10px 0',
-  },
-  resultCard: (theme) => ({
-    backgroundColor: theme === 'dark' ? '#444' : '#fff',
-    border: `1px solid ${theme === 'dark' ? '#555' : '#ddd'}`,
-    borderRadius: '8px',
-    padding: '15px',
-    marginRight: '15px',
-    flex: '0 0 auto',
-  }),
-  link: {
-    textDecoration: 'none',
-    color: 'inherit',
-  },
-  resultTitle: (theme) => ({
-    fontSize: '1.5rem',
-    margin: '0 0 10px',
-    color: theme === 'dark' ? '#fff' : '#333',
-  }),
-  resultYear: (theme) => ({
-    margin: '0 0 10px',
-    color: theme === 'dark' ? '#ccc' : '#666',
-  }),
-  resultPoster: {
-    width: '100px',
-    borderRadius: '4px',
-  },
 };
 
 export default SearchBar;
