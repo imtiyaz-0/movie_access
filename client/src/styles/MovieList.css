@@ -43,6 +43,10 @@ body {
   padding: 15px;
   transition: background-color 0.3s;
 }
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .movie-item:hover {
   background-color: var(--movie-item-hover-bg-light);
