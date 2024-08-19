@@ -119,7 +119,6 @@ router.post('/request-reset', async (req, res) => {
     user.resetPasswordToken = resetToken;
     user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
     await user.save();
-    console.log('task 1');
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -127,14 +126,12 @@ router.post('/request-reset', async (req, res) => {
         pass: process.env.EMAIL_PASS,
       },
     });
-    console.log('task 2');
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
       subject: 'Password Reset',
       text: `Your password reset link is: http://localhost:3000/reset/${resetToken}`,
     };
-    console.log('task 3');
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.error('Error:', error);
@@ -142,7 +139,6 @@ router.post('/request-reset', async (req, res) => {
         console.log('Email sent:', info.response);
       }
     });
-    console.log('task 4');
     res.status(200).json({ message: 'Password reset link sent to your email.' });
   } catch (error) {
     logger.error('Error sending password reset email:', {
@@ -176,6 +172,5 @@ router.post('/reset/:token', async (req, res) => {
     res.status(500).json({ message: 'Error resetting password' });
   }
 });
-
 
 module.exports = router;
