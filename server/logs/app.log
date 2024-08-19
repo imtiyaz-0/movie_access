@@ -1,0 +1,778 @@
+{"level":30,"time":1723112715794,"pid":19494,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723112716459,"pid":19494,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723112745122,"pid":19541,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723112745829,"pid":19541,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723112784065,"pid":19541,"hostname":"imtiyazs-MacBook-Air.local","msg":"New user registered: anaya"}
+{"level":40,"time":1723112805637,"pid":19541,"hostname":"imtiyazs-MacBook-Air.local","msg":"Login attempt with invalid username:"}
+{"level":30,"time":1723114022471,"pid":20168,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723114023105,"pid":20168,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723117920168,"pid":21657,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723117920830,"pid":21657,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723118861308,"pid":22180,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723118861932,"pid":22180,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723177945807,"pid":23085,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723177946570,"pid":23085,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723179065050,"pid":23085,"hostname":"imtiyazs-MacBook-Air.local","msg":"New user registered: Vansh"}
+{"level":30,"time":1723450293902,"pid":29518,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723450294612,"pid":29518,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723451004322,"pid":30004,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723451005058,"pid":30004,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723451307825,"pid":30339,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723451308538,"pid":30339,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723451783877,"pid":30510,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723451784650,"pid":30510,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723451850620,"pid":30680,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723451851141,"pid":30680,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723452064945,"pid":30990,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723452065588,"pid":30990,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723454514441,"pid":31344,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723454515194,"pid":31344,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723455083229,"pid":31624,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723455083899,"pid":31624,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723455530121,"pid":31756,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723455530714,"pid":31756,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723455572613,"pid":31756,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723455653045,"pid":31756,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723455853981,"pid":31756,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723455861632,"pid":31756,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723456067120,"pid":32026,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723456068005,"pid":32026,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723456276460,"pid":32026,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723456594416,"pid":32026,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723456762352,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723456763228,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723456777248,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723456879239,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723456997256,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723457007844,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723457026217,"pid":32396,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723457130126,"pid":32578,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723457130783,"pid":32578,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723457140649,"pid":32578,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723457147405,"pid":32578,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723457472769,"pid":32685,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723457473713,"pid":32685,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723459184871,"pid":33667,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459185451,"pid":33667,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723459197155,"pid":33667,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723459207483,"pid":33667,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723459262427,"pid":33728,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459263091,"pid":33728,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723459323114,"pid":33955,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459329260,"pid":33955,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723459365754,"pid":34077,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459366230,"pid":34077,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723459374717,"pid":34077,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723459401588,"pid":34109,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459402147,"pid":34109,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723459409456,"pid":34109,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":50,"time":1723459486945,"pid":34109,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723459496621,"pid":34168,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459497137,"pid":34168,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723459502532,"pid":34168,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723459599492,"pid":34246,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459600032,"pid":34246,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":50,"time":1723459604340,"pid":34246,"hostname":"imtiyazs-MacBook-Air.local","msg":"Error during Google authentication:"}
+{"level":30,"time":1723459625289,"pid":34285,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459625865,"pid":34285,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723459654516,"pid":34328,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459655013,"pid":34328,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723459694824,"pid":34376,"hostname":"imtiyazs-MacBook-Air.local","msg":"Server running on port 5001"}
+{"level":30,"time":1723459695390,"pid":34376,"hostname":"imtiyazs-MacBook-Air.local","msg":"MongoDB connected"}
+{"level":30,"time":1723615999912,"pid":6480,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723616000439,"pid":6480,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723618647553,"pid":3236,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723618648155,"pid":3236,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723618760324,"pid":10056,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723618760951,"pid":10056,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723619073190,"pid":11892,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723619073730,"pid":11892,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723619469247,"pid":12400,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723619469741,"pid":12400,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723619764735,"pid":13392,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723619765249,"pid":13392,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723619837973,"pid":10120,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723619838524,"pid":10120,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723619952857,"pid":14372,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723619953429,"pid":14372,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723621329347,"pid":7704,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723621329958,"pid":7704,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723621680632,"pid":15228,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723621681147,"pid":15228,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723621753123,"pid":11800,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723621753686,"pid":11800,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622043775,"pid":14148,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622045418,"pid":14148,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622049645,"pid":3060,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622050166,"pid":3060,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622156200,"pid":6444,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622156718,"pid":6444,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622196178,"pid":15944,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622196635,"pid":15944,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622299868,"pid":4376,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622300485,"pid":4376,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622395533,"pid":10628,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622396036,"pid":10628,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622400549,"pid":10628,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622400549,"pid":10628,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies:"}
+{"level":50,"time":1723622400586,"pid":10628,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622400586,"pid":10628,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622452151,"pid":4500,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622452642,"pid":4500,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622561502,"pid":384,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622562055,"pid":384,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622567156,"pid":384,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622567156,"pid":384,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622567196,"pid":384,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622567196,"pid":384,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622597104,"pid":8980,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622597564,"pid":8980,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622601897,"pid":8980,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622601897,"pid":8980,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622601932,"pid":8980,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622601932,"pid":8980,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622630436,"pid":8448,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622630976,"pid":8448,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622637766,"pid":8448,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622637766,"pid":8448,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622637807,"pid":8448,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622637807,"pid":8448,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622685628,"pid":9004,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622686197,"pid":9004,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723622688198,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622688779,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622692659,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622692659,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622692702,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622692702,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622694532,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622694532,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622694571,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622694571,"pid":1872,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622703917,"pid":3960,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622704628,"pid":3960,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622717102,"pid":3960,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622717102,"pid":3960,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622717172,"pid":3960,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622717172,"pid":3960,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622767859,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622768467,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622771389,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622771389,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622771432,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622771432,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622772560,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622772560,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622772596,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622772596,"pid":15300,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723622924674,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723622927460,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723622928882,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622928882,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622928932,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622928932,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622930229,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622930229,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622930272,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622930272,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622963347,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622963347,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622963385,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622963385,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622964022,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622964022,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723622964062,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723622964062,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623025157,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623025158,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623025199,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623025199,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623028508,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623028508,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623028544,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623028544,"pid":11124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623088560,"pid":8592,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623089177,"pid":8592,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623112843,"pid":1124,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623113283,"pid":1124,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723623174243,"pid":1124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623174243,"pid":1124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623174291,"pid":1124,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623174291,"pid":1124,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623238449,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623239042,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623242904,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623242916,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623242916,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623242957,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623242960,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623242960,"pid":8348,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623275670,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623276178,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623280410,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623280421,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623280421,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623280460,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623280462,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623280462,"pid":4828,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623326902,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623327405,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623330527,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623330535,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623330535,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623330586,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623330588,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623330588,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623331865,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623331866,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623331867,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623331915,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623331916,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623331916,"pid":11432,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623354259,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623354779,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623358624,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623358632,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623358632,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623358662,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623358663,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623358663,"pid":5908,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623421242,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623421894,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623424696,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623424703,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623424703,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623424703,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623424740,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623424742,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623424743,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623424743,"pid":10092,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623485338,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623485949,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623488079,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623488093,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623488093,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623488093,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623488149,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623488152,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623488152,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623488152,"pid":12828,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623536937,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623537381,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623540080,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623540093,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623540093,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623540093,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623540161,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623540163,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623540163,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623540163,"pid":14220,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623561988,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623562542,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623565431,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623565441,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623565441,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623565441,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623565445,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623565447,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623565447,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623565447,"pid":6184,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623628906,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623629487,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723623632179,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623632179,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623632222,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623632222,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623633386,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623633386,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623633442,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623633442,"pid":6636,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623763984,"pid":4276,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623764524,"pid":4276,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723623769791,"pid":4276,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623769791,"pid":4276,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":50,"time":1723623769835,"pid":4276,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623769835,"pid":4276,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623786348,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623786795,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623789364,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623789382,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623789382,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623789430,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623789432,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching movies from OMDb API:"}
+{"level":50,"time":1723623789432,"pid":4596,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623830835,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723623831613,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723623833395,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623833411,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623833411,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723623833411,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723623833451,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723623833454,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723623833454,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723623833454,"pid":15072,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624002202,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723624002849,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723624005553,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723624005562,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723624005562,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723624005562,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624005605,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723624005607,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723624005607,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723624005607,"pid":3920,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624030798,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723624031354,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723624041308,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723624041324,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723624041324,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723624041324,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624041358,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":50,"time":1723624041362,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Error making API request:"}
+{"level":50,"time":1723624041362,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723624041362,"pid":16180,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624123531,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723624124105,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723624127434,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723624128683,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":50,"time":1723624128703,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Error processing movie details:"}
+{"level":50,"time":1723624128703,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723624128703,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624128742,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723624128835,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":50,"time":1723624128846,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Error processing movie details:"}
+{"level":50,"time":1723624128846,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Error fetching recent movies from API:"}
+{"level":50,"time":1723624128846,"pid":10892,"hostname":"DESKTOP-QOR0IJE","msg":"Error updating recent movies:"}
+{"level":30,"time":1723624178011,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723624178458,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723624181767,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723624181859,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723624182484,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723624182484,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723624182633,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723624182695,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723624182751,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723624182751,"pid":11016,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723624209427,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723624209906,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723624214929,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723624215021,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723624215109,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723624215110,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723624215268,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723624215337,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723624215383,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723624215383,"pid":9644,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723626777946,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723626778489,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723626785095,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723626785203,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723626785769,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723626785770,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723626785938,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723626786022,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723626786075,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723626786075,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723626869645,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723626869760,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723626869868,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723626869868,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723626870044,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723626870121,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723626870180,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723626870180,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723626894166,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723626894400,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723626894540,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723626894541,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723626894828,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723626894891,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723626894943,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723626894944,"pid":11724,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630518344,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723630518883,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723630525790,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630525967,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630526071,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630526071,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630526242,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630526517,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630526573,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630526573,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630529142,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630529205,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630529277,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630529278,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630529448,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630529535,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630529592,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630529593,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630531338,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630531401,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630531464,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630531465,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630531626,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630531701,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630531751,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630531751,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630571727,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630571798,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630571883,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630571883,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630572049,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630572129,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630572184,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630572184,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630593976,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630594094,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630594169,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630594169,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630594336,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630594401,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630594445,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630594445,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630595066,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630595128,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630595170,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630595171,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630595325,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630595391,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630595439,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630595439,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630640392,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630640469,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630640545,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630640545,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630640705,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630640765,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630640810,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630640810,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630641678,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630641739,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630641788,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630641788,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630641936,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630641997,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630642040,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630642041,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630671354,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630671435,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630671535,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630671536,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630671729,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630671796,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630671843,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630671843,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630680587,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630680680,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630680800,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630680800,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630680960,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630681035,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630681096,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630681096,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630780704,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630780789,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630780850,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630780851,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630781015,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630781083,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630781124,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630781124,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630799818,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630799899,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630800019,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630800019,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630800174,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630800266,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630800350,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630800350,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630810277,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630810368,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630810476,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630810476,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630810645,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630810709,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630810778,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630810779,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630844317,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630844409,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630844509,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630844510,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723630844669,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723630844734,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723630844787,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723630844787,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631010225,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631010321,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631010411,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631010411,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631010577,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631010635,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631010681,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631010682,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631304177,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631304300,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631304391,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631304391,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631304563,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631304627,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631304686,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631304686,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631453209,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631453306,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631453403,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631453403,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631453564,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631453622,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631453682,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631453682,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631512153,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631512220,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631512289,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631512289,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631512438,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631512499,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631512540,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631512541,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631530741,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631530843,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631530920,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631530920,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723631531082,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723631531151,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723631531212,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723631531212,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632064889,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632064973,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632065062,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632065064,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632065235,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632065298,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632065358,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632065358,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632083957,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632084650,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632085256,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632085257,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632085418,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632085501,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632085555,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632085555,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632251654,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632251765,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632252359,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632252360,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632252553,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632252611,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632252654,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632252655,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632409444,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632409542,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632409620,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632409621,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632409785,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632409870,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632409926,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632409927,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632493882,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632493988,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632494084,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632494084,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632494235,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632494322,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632494372,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632494373,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632502409,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632502479,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632502585,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632502585,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632502746,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632502813,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632502858,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632502859,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632532956,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632533041,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632533121,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632533121,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723632533287,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723632533352,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723632533511,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723632533511,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":50,"time":1723632557476,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723632565681,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723632607238,"pid":6128,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723632676907,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723632677447,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723633000096,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723633301638,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723633301764,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723633301889,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723633301889,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":30,"time":1723633302083,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Cache is outdated or empty, fetching new data..."}
+{"level":30,"time":1723633302157,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"All movies fetched:"}
+{"level":30,"time":1723633302238,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Movie details fetched:"}
+{"level":30,"time":1723633302238,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Recent movies determined:"}
+{"level":50,"time":1723633314188,"pid":10272,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723633415341,"pid":5828,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723633415892,"pid":5828,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723633417087,"pid":8696,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723633417539,"pid":8696,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723633448494,"pid":8696,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723633473874,"pid":8696,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723633495541,"pid":11120,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723633496166,"pid":11120,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723633509760,"pid":9856,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723633510287,"pid":9856,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723633542672,"pid":12596,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723633543416,"pid":12596,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723633595929,"pid":12596,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723633869974,"pid":12596,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723633973132,"pid":13696,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723633973674,"pid":13696,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723633981588,"pid":13696,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723634017119,"pid":13696,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723785352502,"pid":14492,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723785353019,"pid":14492,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723785453024,"pid":14492,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723787879322,"pid":10632,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723787879847,"pid":10632,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723787908355,"pid":10632,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723788470072,"pid":10632,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723788560056,"pid":10632,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723788619451,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723788620023,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723788625736,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723790520297,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723790678472,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723790756454,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":50,"time":1723790785673,"pid":4956,"hostname":"DESKTOP-QOR0IJE","msg":"Error during Google authentication:"}
+{"level":30,"time":1723798412244,"pid":15460,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723798412789,"pid":15460,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723799562787,"pid":2508,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723799563413,"pid":2508,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723799622367,"pid":7796,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723799622887,"pid":7796,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723800283002,"pid":4524,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723800283486,"pid":4524,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723800388194,"pid":15180,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723800388746,"pid":15180,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723800554384,"pid":2796,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723800556924,"pid":2796,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723800582196,"pid":2796,"hostname":"DESKTOP-QOR0IJE","msg":"New user registered: rock"}
+{"level":30,"time":1723801126756,"pid":6644,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723801127280,"pid":6644,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723801331939,"pid":13204,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723801332506,"pid":13204,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723801356679,"pid":3096,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723801357118,"pid":3096,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723801874209,"pid":7452,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723801874784,"pid":7452,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723801937987,"pid":6772,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723801938524,"pid":6772,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723802834693,"pid":9776,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723802835321,"pid":9776,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723802990335,"pid":7196,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723802990824,"pid":7196,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723803093318,"pid":11448,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803093848,"pid":11448,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803103083,"pid":11448,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":30,"time":1723803128520,"pid":10320,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803129017,"pid":10320,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803132722,"pid":10320,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":50,"time":1723803135145,"pid":10320,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":50,"time":1723803135940,"pid":10320,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":30,"time":1723803148130,"pid":4308,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803148598,"pid":4308,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803151563,"pid":4308,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":50,"time":1723803152143,"pid":4308,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":50,"time":1723803152147,"pid":4308,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":50,"time":1723803153482,"pid":4308,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset link:"}
+{"level":30,"time":1723803212656,"pid":2488,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803213165,"pid":2488,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803218089,"pid":2488,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803320706,"pid":8856,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803321221,"pid":8856,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803331361,"pid":8856,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723803335726,"pid":8856,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723803338255,"pid":8856,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723803339996,"pid":8856,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803433517,"pid":12536,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803434047,"pid":12536,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803439243,"pid":12536,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723803555458,"pid":12536,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803612011,"pid":15400,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803613006,"pid":15400,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803615221,"pid":15400,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803627180,"pid":12036,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803628367,"pid":12036,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803631032,"pid":12036,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803646146,"pid":7372,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803647309,"pid":7372,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803649435,"pid":7372,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723803654084,"pid":7372,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803673209,"pid":5992,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803673667,"pid":5992,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803677677,"pid":5992,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723803683581,"pid":5992,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723803797017,"pid":15032,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723803797551,"pid":15032,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723803801933,"pid":15032,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723804035969,"pid":3992,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723804036507,"pid":3992,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723804343358,"pid":872,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723804343900,"pid":872,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723804371377,"pid":872,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723804375673,"pid":872,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723804486086,"pid":3032,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723804486619,"pid":3032,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723804493197,"pid":3032,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723804556418,"pid":4972,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723804556929,"pid":4972,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723804559194,"pid":4972,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723804656338,"pid":2704,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723804656924,"pid":2704,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723804659944,"pid":2704,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723804665160,"pid":2704,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723804681199,"pid":412,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723804681669,"pid":412,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723804883155,"pid":412,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723804886289,"pid":412,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723805702659,"pid":412,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723806070716,"pid":13632,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723806071203,"pid":13632,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723806093059,"pid":14496,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723806093587,"pid":14496,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723806115532,"pid":14496,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723806139997,"pid":1476,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723806140500,"pid":1476,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723806143108,"pid":1476,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723806148680,"pid":1476,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":50,"time":1723807408071,"pid":1476,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723807876134,"pid":15896,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723807876669,"pid":15896,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":50,"time":1723807881390,"pid":15896,"hostname":"DESKTOP-QOR0IJE","msg":"Error sending password reset email:"}
+{"level":30,"time":1723807962952,"pid":2620,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723807963500,"pid":2620,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808004176,"pid":10400,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808004634,"pid":10400,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808128433,"pid":8520,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808130765,"pid":8520,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808256580,"pid":8572,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808257165,"pid":8572,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808308701,"pid":9308,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808309162,"pid":9308,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808383819,"pid":5336,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808384396,"pid":5336,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808426248,"pid":392,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808426744,"pid":392,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808478822,"pid":4660,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808479365,"pid":4660,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723808514976,"pid":5132,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723808515530,"pid":5132,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723809460297,"pid":4360,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723809460868,"pid":4360,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1723809570312,"pid":4360,"hostname":"DESKTOP-QOR0IJE","msg":"New user registered: imtiyaz8"}
+{"level":40,"time":1723809622901,"pid":4360,"hostname":"DESKTOP-QOR0IJE","msg":"Login attempt with invalid password for username: imtiyaz8"}
+{"level":30,"time":1723810758328,"pid":8836,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1723810758828,"pid":8836,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}

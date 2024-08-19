@@ -1,0 +1,125 @@
+:root {
+  --background-color-light: #f4f4f4;
+  --text-color-light: #333;
+  --input-bg-light: #fff;
+  --input-border-light: #ddd;
+  --input-text-light: #333;
+  --movie-item-bg-light: #fff;
+  --movie-item-border-light: #ddd;
+  --movie-title-hover-bg-light: #f0f0f0;
+}
+
+[data-theme='dark'] {
+  --background-color-light: #333;
+  --text-color-light: #f4f4f4;
+  --input-bg-light: #555;
+  --input-border-light: #555;
+  --input-text-light: #ddd;
+  --movie-item-bg-light: #444;
+  --movie-item-border-light: #555;
+  --movie-title-hover-bg-light: #555;
+}
+
+.search-bar-container {
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--input-border-light);
+  border-radius: 4px;
+  background-color: var(--input-bg-light);
+  color: var(--input-text-light);
+}
+
+.search-bar-button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.search-suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--input-border-light);
+  border-radius: 4px;
+  background-color: var(--input-bg-light);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-suggestion {
+  padding: 10px;
+  cursor: pointer;
+  color: var(--input-text-light);
+}
+.search-suggestion:hover{
+  background-color: #007bff;
+}
+.search-results-container {
+  margin-top: 20px;
+}
+
+.no-results-text {
+  color: var(--text-color-light);
+}
+
+.results-slider {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.result-card {
+  width: 200px;
+  background-color: var(--movie-item-bg-light);
+  border: 1px solid var(--movie-item-border-light);
+  border-radius: 8px;
+  padding: 15px;
+  margin-right: 15px;
+}
+
+.result-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.result-title {
+  font-size: 1.5rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+.result-card:hover .result-title {
+  width: 200px;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;       
+  background-color: var(--movie-item-hover-bg-light);  
+}
+
+.result-year {
+  margin: 5px 0;
+  color: var(--text-color-light);
+}
+
+.result-poster {
+  width: 200px;
+  height: 250px;
+  border-radius: 4px;
+}
