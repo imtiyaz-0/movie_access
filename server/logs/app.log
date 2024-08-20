@@ -788,3 +788,4 @@
 {"level":40,"time":1724053465549,"pid":7592,"hostname":"DESKTOP-QOR0IJE","msg":"Login attempt with invalid username: dfgghjh"}
 {"level":30,"time":1724146670342,"pid":14616,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
 {"level":30,"time":1724146670843,"pid":14616,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":40,"time":1724147997125,"pid":14616,"hostname":"DESKTOP-QOR0IJE","msg":"Login attempt with invalid password for username: imtiyaz"}
