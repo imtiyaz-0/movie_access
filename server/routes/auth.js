@@ -128,7 +128,7 @@ router.post('/request-reset', async (req, res) => {
       from: process.env.EMAIL_USER,
       to: email,
       subject: 'Password Reset',
-      text: `Your password reset link is: http://localhost:3000/reset/${resetToken}`,
+      text: `Your password reset link is: ${process.env.EMAIL_url}/reset/${resetToken}`,
     };
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
