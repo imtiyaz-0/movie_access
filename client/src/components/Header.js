@@ -121,7 +121,7 @@ const logout =()=>{
           </button>
           {dropdownOpen === 'movies' && (
             <div style={styles.dropdownMenu}  ref={dropdownRef}>
-              <a href="/recent" style={styles.dropdownMenuItem}>Recent Movies</a>
+              <a href="/" style={styles.dropdownMenuItem}>Home</a>
               <a href="/top-rated" style={styles.dropdownMenuItem}>Top Rated</a>
               <a href="/genres" style={styles.dropdownMenuItem}>Genres</a>
               <a href="/more" style={{ ...styles.dropdownMenuItem, ...styles.dropdownMenuItemHover }}>

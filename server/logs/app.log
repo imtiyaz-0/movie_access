@@ -780,3 +780,11 @@
 {"level":30,"time":1724044709677,"pid":15408,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
 {"level":30,"time":1724044853287,"pid":9528,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
 {"level":30,"time":1724044853778,"pid":9528,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1724045428203,"pid":17112,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1724045428692,"pid":17112,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":30,"time":1724050652701,"pid":7592,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1724050653206,"pid":7592,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}
+{"level":40,"time":1724053394962,"pid":7592,"hostname":"DESKTOP-QOR0IJE","msg":"Login attempt with invalid username: imtiy"}
+{"level":40,"time":1724053465549,"pid":7592,"hostname":"DESKTOP-QOR0IJE","msg":"Login attempt with invalid username: dfgghjh"}
+{"level":30,"time":1724146670342,"pid":14616,"hostname":"DESKTOP-QOR0IJE","msg":"Server running on port 5001"}
+{"level":30,"time":1724146670843,"pid":14616,"hostname":"DESKTOP-QOR0IJE","msg":"MongoDB connected"}

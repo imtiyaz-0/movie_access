@@ -111,13 +111,11 @@ router.post('/request-reset', async (req, res) => {
     return res.status(400).json({ message: 'Email is required.' });
   }
   try {
-    console.log('task -1');
     const user = await User.findOne({ email });
     if (!user) return res.status(400).json({ message: 'No user with that email' });
-    console.log('task 0');
     const resetToken = crypto.randomBytes(20).toString('hex');
     user.resetPasswordToken = resetToken;
-    user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
+    user.resetPasswordExpires = Date.now() + 3600000; 
     await user.save();
     const transporter = nodemailer.createTransport({
       service: 'gmail',

@@ -7,7 +7,6 @@ import '../styles/SearchBar.css';
 
 const SearchBar = () => {
   const [query, setQuery] = useState('');
-  sdfjbib
   const [searchResults, setSearchResults] = useState([]);
   const [noResults, setNoResults] = useState(false);
   const [loading, setLoading] = useState(false);

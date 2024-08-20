@@ -7,8 +7,7 @@ const PrivateRoute = ({ element, movieId }) => {
   if (isAuthenticated) {
     return element;
   } else {
-    // Pass the movieId in state to redirect back after login
-    return <Navigate to="/login" state={{ from: `/movie/${movieId}` }} />;
+    return <Navigate to="/login" state={{ from: `/movie/${movieId}` }} replace />;
   }
 };
 

@@ -10,7 +10,7 @@ const Login = () => {
   const [error, setError] = useState(''); 
   const navigate = useNavigate();
   const location = useLocation();
-
+  const [forPass , setForPass] = useState(false);
   const { theme } = useContext(ThemeContext);
 
   const validateForm = () => {
@@ -18,15 +18,6 @@ const Login = () => {
       setError('Username and Password are required');
       return false;
     }
-    if (username.length < 3) {
-      setError('Username must be at least 3 characters long');
-      return false;
-    }
-    if (password.length < 6) {
-      setError('Password must be at least 6 characters long');
-      return false;
-    }
-   
     return true;
   };
 
@@ -39,10 +30,11 @@ const Login = () => {
       const response = await axios.post(`http://localhost:${process.env.REACT_APP_PORT}/api/auth/login`, { username, password });
       localStorage.setItem('token', response.data.token);
       const from = location.state?.from || '/';
-      navigate(from);
+      navigate(from, { replace: true });
     } catch (error) {
       if (error.response && error.response.status === 400) {
         setError('Incorrect username or password');
+        setForPass(true);
       } else {
         setError('Login failed. Please try again later.');
       }
@@ -57,7 +49,7 @@ const Login = () => {
       });
       localStorage.setItem('token', response.data.token);
       const from = location.state?.from || '/';
-      navigate(from);
+      navigate(from, { replace: true });
     } catch (error) {
       setError('Google login error')
       console.error('Google login error:', error.response ? error.response.data : error.message);
@@ -67,7 +59,7 @@ const Login = () => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      navigate('/');
+      navigate('/', { replace: true });
     }
   }, [navigate]);
 
@@ -76,7 +68,7 @@ const Login = () => {
   };
 
   const backToMovieList = () => {
-    navigate('/');
+    navigate('/', { replace: true });
   };
 
   const handleForgotPassword = () => {
@@ -122,9 +114,9 @@ const Login = () => {
         <button type="button" onClick={backToMovieList} style={styles.backButton(theme)}>
           Back to Movie List
         </button>
-        <button type="button" onClick={handleForgotPassword} style={styles.forgotPasswordButton(theme)}>
+        {forPass && <button type="button" onClick={handleForgotPassword} style={styles.forgotPasswordButton(theme)}>
           Forgot Password?
-        </button>
+        </button>}
       </div>
     </div>
   );
