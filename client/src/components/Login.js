@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
+import { AuthContext } from '../context/AuthContext';
 import { GoogleLogin } from '@react-oauth/google';
 
 const Login = () => {
@@ -12,6 +13,7 @@ const Login = () => {
   const location = useLocation();
   const [forPass , setForPass] = useState(false);
   const { theme } = useContext(ThemeContext);
+  const { login } = useContext(AuthContext);
 
   const validateForm = () => {
     if (!username || !password) {
@@ -27,8 +29,7 @@ const Login = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await axios.post(`http://localhost:${process.env.REACT_APP_PORT}/api/auth/login`, { username, password });
-      localStorage.setItem('token', response.data.token);
+      await login(username, password);
       const from = location.state?.from || '/';
       navigate(from, { replace: true });
     } catch (error) {

@@ -5,13 +5,18 @@ const movieRoutes = require('./routes/movies');
 const authRoutes = require('./routes/auth');
 const logger = require('./logger');
 const swaggerSetup = require('./swagger');
-const nodemailer = require('nodemailer'); // Make sure nodemailer is required
+const cookieParser = require('cookie-parser');
 
 require('dotenv').config();
 
 const app = express();
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  credentials: true, 
+};
+app.use(cors(corsOptions));
+app.use(cookieParser());
 
-app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)

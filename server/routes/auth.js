@@ -13,6 +13,18 @@ const router = express.Router();
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const secretKey = process.env.JWT_SECRET_KEY;
 
+
+router.post('/logout', (req, res) => {
+  res.cookie('token', '', {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'Strict',
+    maxAge: 0 
+  });
+  res.status(200).json({ message: 'Logout successful' });
+});
+
+
 router.post('/register', [
   body('email').isEmail().withMessage('Invalid email address'),
   body('username').isLength({ min: 3 }).withMessage('Username must be at least 3 characters long'),
@@ -40,13 +52,42 @@ router.post('/register', [
     const payload = { userId: newUser._id };
     const token = jwt.sign(payload, secretKey, { expiresIn: '1h' });
 
-    logger.info(`New user registered: ${username}`);
-    res.status(201).json({ message: 'User registered successfully', token });
+    res.cookie('token', token, {
+      httpOnly: true, 
+      secure: process.env.NODE_ENV === 'production', 
+      sameSite: 'Strict',
+      maxAge: 3600000
+    });
+
+    res.status(201).json({ message: 'User registered successfully' });
   } catch (error) {
     logger.error('Error registering user:', error);
     res.status(500).json({ message: 'Server error' });
   }
 });
+router.get('/verify', async (req, res) => {
+  try {
+    const token = req.cookies.token;
+    if (!token) {
+      return res.status(401).json({ message: 'No token provided' });
+    }
+
+    const decoded = jwt.verify(token, secretKey);
+
+    res.status(200).json({ message: 'Token is valid', user: decoded });
+  } catch (error) {
+    if (error.name === 'JsonWebTokenError') {
+      return res.status(401).json({ message: 'Invalid token' });
+    } else if (error.name === 'TokenExpiredError') {
+      return res.status(401).json({ message: 'Token expired' });
+    } else {
+      console.error('Verification error:', error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  }
+});
+
+
 
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
@@ -67,7 +108,14 @@ router.post('/login', async (req, res) => {
     const payload = { userId: user._id };
     const token = jwt.sign(payload, secretKey, { expiresIn: '1h' });
 
-    res.json({ token });
+    res.cookie('token', token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'Strict',
+      maxAge: 3600000
+    });
+
+    res.status(200).json({ message: 'Login successful' });
   } catch (error) {
     logger.error('Error during login:', error);
     res.status(500).json({ message: 'Server error' });

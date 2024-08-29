@@ -1,12 +1,15 @@
 import React, { useState, useContext, useEffect, useRef } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
 
 const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const navigate = useNavigate();
   const dropdownRef = useRef(null); 
+  const { isAuthenticated, logout } = useContext(AuthContext);
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -24,14 +27,24 @@ const Header = () => {
   const handleDropdownToggle = (option) => {
     setDropdownOpen(dropdownOpen === option ? null : option);
   };
- const token = localStorage.getItem('token');
+  // const token = Cookies.get('token');
+  
   const handleLoginClick = () => {
     navigate('/login');
   };
-const logout =()=>{
-    localStorage.removeItem('token');
-    navigate('/')
-}
+  // const logout = async () => {
+  //   try {
+  //     await axios.post('/api/auth/logout'); // Make sure you implement this route in your backend
+  //     navigate('/');
+  //   } catch (error) {
+  //     console.error('Logout error:', error);
+  //   }
+  // };/
+
+  const handleLogoutClick = async () => {
+    await logout();
+    navigate('/');
+  };
   const styles = {
     header: {
       display: 'flex',
@@ -120,17 +133,17 @@ const logout =()=>{
             Movies <span style={styles.arrow}>&#9662;</span>
           </button>
           {dropdownOpen === 'movies' && (
-            <div style={styles.dropdownMenu}  ref={dropdownRef}>
-              <a href="/" style={styles.dropdownMenuItem}>Home</a>
-              <a href="/top-rated" style={styles.dropdownMenuItem}>Top Rated</a>
-              <a href="/genres" style={styles.dropdownMenuItem}>Genres</a>
-              <a href="/more" style={{ ...styles.dropdownMenuItem, ...styles.dropdownMenuItemHover }}>
-                Click here for more details
-              </a>
-            </div>
+          <div style={styles.dropdownMenu} ref={dropdownRef}>
+          <Link to="/" style={styles.dropdownMenuItem}>Home</Link>
+          <Link to="/top-rated" style={styles.dropdownMenuItem}>Top Rated</Link>
+          <Link to="/genres" style={styles.dropdownMenuItem}>Genres</Link>
+          <Link to="/more" style={{ ...styles.dropdownMenuItem, ...styles.dropdownMenuItemHover }}>
+              Click here for more details
+          </Link>
+      </div>
           )}
         </div>
-{token && 
+{isAuthenticated && 
         <div style={styles.dropdown}>
           <button
             style={styles.dropdownToggle}
@@ -139,14 +152,14 @@ const logout =()=>{
             Profile <span style={styles.arrow}>&#9662;</span>
           </button>
           {dropdownOpen === 'profile' && (
-            <div style={styles.dropdownMenu}  ref={dropdownRef}>
-              <a href="/profile" style={styles.dropdownMenuItem}>View Profile</a>
-              <a href="/settings" style={styles.dropdownMenuItem}>Settings</a>
-              <button  onClick={logout} style={styles.dropdownMenuItem}>Logout</button>
-            </div>
+             <div style={styles.dropdownMenu} ref={dropdownRef}>
+             <Link to="/profile" style={styles.dropdownMenuItem}>View Profile</Link>
+             <Link to="/settings" style={styles.dropdownMenuItem}>Settings</Link>
+             <button onClick={handleLogoutClick} style={styles.dropdownMenuItem}>Logout</button>
+         </div>
           )}
         </div>}
-{!token && 
+{!isAuthenticated && 
         <button onClick={handleLoginClick} style={styles.loginButton}>Login</button>}
       </nav>
     </header>

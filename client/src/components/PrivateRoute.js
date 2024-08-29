@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Navigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
 
 const PrivateRoute = ({ element, movieId }) => {
-  const isAuthenticated = !!localStorage.getItem('token');
+  const {isAuthenticated} = useContext(AuthContext);
 
   if (isAuthenticated) {
     return element;
@@ -12,3 +13,4 @@ const PrivateRoute = ({ element, movieId }) => {
 };
 
 export default PrivateRoute;
+

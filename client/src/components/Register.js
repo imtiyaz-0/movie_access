@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { ThemeContext } from '../context/ThemeContext';
+import { AuthContext } from '../context/AuthContext';
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -11,6 +12,7 @@ const Register = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { theme } = useContext(ThemeContext);
+  const {isAuthenticated ,setIsAuthenticated} = useContext(AuthContext);
 
   const validateForm = () => {
     if (!email || !username || !password) {
@@ -42,8 +44,9 @@ const Register = () => {
         email,
         username,
         password
-      });
-      localStorage.setItem('token', response.data.token);
+      }, { withCredentials: true });
+      // localStorage.setItem('token', response.data.token);
+      setIsAuthenticated(true);
       const from = location.state?.from || '/';
       navigate(from);
     } catch (error) {
@@ -61,11 +64,11 @@ const Register = () => {
   };
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
+   
+    if (isAuthenticated) {
       navigate('/');
     }
-  }, [navigate]);
+  }, [isAuthenticated,navigate]);
 
   return (
     <div style={styles.container(theme)}>
