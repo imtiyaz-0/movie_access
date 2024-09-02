@@ -23,10 +23,9 @@ const SearchBar = () => {
 
   const fetchSuggestions = async () => {
     try {
-      const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/search`, {
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/movies/search`, {
         params: { query, type: 'movie' }
       });
-      console.log('Suggestions Data:', response.data); // Inspect the data
       setSuggestions(response.data);
     } catch (error) {
       console.error('Error fetching suggestions:', error);
@@ -38,7 +37,7 @@ const SearchBar = () => {
     if (!query) return;
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/search`, {
+         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/movies/search`, {
         params: { query, type: 'movie' }
       });
       if (response.data.length === 0) {

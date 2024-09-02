@@ -14,14 +14,14 @@ const fetchMoviesFromAPIs = async (queryParams) => {
   const apiKey2 = process.env.API_KEY2;
 
   try {
-    const [response1, response2] = await Promise.all([
+    const [response1, response2] = await Promise.allSettled([
       axios.get(apiUrl1, { params: { ...queryParams, apikey: apiKey1 } }),
       axios.get(apiUrl2, { params: { query: queryParams.s, api_key: apiKey2 } })
     ]);
-
-    const moviesFromApi1 = response1.data.Search || [];
-    const moviesFromApi2 = response2.data.results || [];
-
+  
+    const moviesFromApi1 = response1.status === 'fulfilled' ? response1.value.data.Search || [] : [];
+    const moviesFromApi2 = response2.status === 'fulfilled' ? response2.value.data.results || [] : [];
+  
     const mappedMoviesFromApi1 = moviesFromApi1.map(movie => ({
       title: movie.Title,
       poster: movie.Poster,
@@ -81,10 +81,12 @@ const fetchRecentMoviesFromAPI = async () => {
       }
     });
 
-    const movieDetailsResponses = await Promise.all(movieDetailsPromises);
-    const detailedMovies = movieDetailsResponses.map((res) => res.data);
+    const movieDetailsResponses = await Promise.allSettled(movieDetailsPromises);
+    const detailedMovies = movieDetailsResponses
+      .filter(res => res.status === 'fulfilled')
+      .map(res => res.value.data);
     detailedMovies.sort((a, b) => new Date(b.Released || b.release_date) - new Date(a.Released || a.release_date));
-    const recentMovies = detailedMovies.slice(0, 15);
+    const recentMovies = detailedMovies.slice(0, 12);
     const validatedMovies = recentMovies.map((movie) => {
       const releaseDate = new Date(movie.Released || movie.release_date);
       return {
@@ -107,7 +109,6 @@ const fetchRecentMoviesFromAPI = async () => {
 
 const ensureRecentMoviesUpdated = async (req, res, next) => {
   try {
-    console.log('task 2')
 
     const fifteenMinutesAgo = moment().subtract(15, 'minutes');
     const cachedMovies = await Movie.find({
@@ -126,7 +127,6 @@ const ensureRecentMoviesUpdated = async (req, res, next) => {
 
 router.get('/recent', ensureRecentMoviesUpdated, async (req, res) => {
   try {
-    console.log('task 1')
     const recentMovies = await Movie.find().sort({ releaseDate: -1 }).limit(12);
     res.json(recentMovies);
   } catch (error) {
@@ -139,7 +139,7 @@ router.get('/search', async (req, res) => {
   const { query, type } = req.query;
   const queryParams = {
     s: query,
-    type: type === 'actor' ? 'movie' : type
+    type: type
   };
 
   try {
@@ -160,17 +160,17 @@ router.get('/movie/:id',authMiddleware, async (req, res) => {
   const { id } = req.params;
 
   try {
-    const [response1, response2] = await Promise.all([
+    const [response1, response2] = await Promise.allSettled([
       axios.get(`${process.env.apiUrl1}?apikey=${process.env.API_KEY1}&i=${id}`),
       axios.get(`${process.env.apiUrl2}3/movie/${id}`, {
         params: { api_key: process.env.API_KEY2 }
       })
     ]);
 
-    const api1Data = response1.data;
-    const api2Data = response2.data;
+    const api1Data = response1.status === 'fulfilled' ? response1.value.data : {};
+    const api2Data = response2.status === 'fulfilled' ? response2.value.data : {};
 
-    const api1Normalized = {
+    const Normalized = {
       Title: api1Data.Title || api2Data.title,
       Year: api1Data.Year || api2Data.release_date.split('-')[0],
       Rated: api1Data.Rated || (api2Data.adult ? 'Rated' : 'Unrated'),
@@ -196,7 +196,7 @@ router.get('/movie/:id',authMiddleware, async (req, res) => {
       Poster: api1Data.Poster || api2Data.poster_path ? `https://image.tmdb.org/t/p/w300${api2Data.poster_path}` : 'N/A'
     };
 
-    res.json(api1Normalized);
+    res.json(Normalized);
   } catch (error) {
     logger.error('Error fetching movie details:', error);
     res.status(500).send('Error fetching movie details');

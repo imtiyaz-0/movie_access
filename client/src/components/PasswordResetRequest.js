@@ -10,7 +10,7 @@ const PasswordResetRequest = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:${process.env.REACT_APP_PORT}/api/auth/request-reset`, { email });
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/request-reset`, { email });
       setMessage('Password reset link sent to your email.');
       setTimeout(() => navigate('/login'), 3000);
     } catch (error) {

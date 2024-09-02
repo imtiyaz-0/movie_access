@@ -29,7 +29,7 @@ const Login = () => {
     if (!validateForm()) return;
 
     try {
-      await axios.post(`http://localhost:${process.env.REACT_APP_PORT}/api/auth/login`, { username, password }, { withCredentials: true });
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/auth/login`, { username, password }, { withCredentials: true });
       setIsAuthenticated(true);  
       const from = location.state?.from || '/';
       navigate(from, { replace: true });

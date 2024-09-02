@@ -16,7 +16,7 @@ const MovieDetails = () => {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/movie/${id}` , {  withCredentials: true  });
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/movies/movie/${id}` , {  withCredentials: true  });
         setMovie(response.data);
         console.log (response.data);
       } catch (error) {
