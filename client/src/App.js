@@ -10,23 +10,23 @@ import { ThemeContext, ThemeProvider } from './context/ThemeContext';
 import Header from './components/Header';
 import PasswordResetRequest from './components/PasswordResetRequest';
 import PasswordReset from './components/PasswordReset';
+import NotFound from './components/NotFound';
+
 const App = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className={`app ${theme}`}>
-      {/* <button onClick={toggleTheme}>
-        Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
-      </button> */}
       <Router>
         <Header/>
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/movie/:id" element={<PrivateRouteWrapper />} />
+          <Route path="/movie/:id" element={<MovieDetails />} />
           <Route path="/request-reset" element={<PasswordResetRequest />} />
-<Route path="/reset/:token" element={<PasswordReset />} />
+          <Route path="/reset/:token" element={<PasswordReset />} />
+          <Route path="*" element={<NotFound />} /> 
         </Routes>
       </Router>
     </div>

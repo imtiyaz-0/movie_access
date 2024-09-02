@@ -16,7 +16,6 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 app.use(cookieParser());
-
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
@@ -30,3 +29,5 @@ swaggerSetup(app);
 
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
+
+ module.exports = app;  

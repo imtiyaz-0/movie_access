@@ -13,7 +13,7 @@ const MovieList = () => {
   const fetchRecentMovies = async () => {
     try {
       const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/recent`);
-      console.log('Recent Movies:', response.data);
+    
       setMovies(response.data);
       setLoading(false);
     } catch (error) {

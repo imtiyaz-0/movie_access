@@ -4,18 +4,26 @@ import { useParams } from 'react-router-dom';
 import moment from 'moment';
 import LoadingSpinner from './LoadingSpinner';
 import { ThemeContext } from '../context/ThemeContext'; 
-
+import { AuthContext } from '../context/AuthContext'; 
+import { useNavigate } from 'react-router-dom';
 const MovieDetails = () => {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
   const { theme } = useContext(ThemeContext); 
+  const navigate = useNavigate();
+  const {  setIsAuthenticated } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/movie/${id}`);
+        const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/movie/${id}` , {  withCredentials: true  });
         setMovie(response.data);
+        console.log (response.data);
+        setIsAuthenticated(true);
       } catch (error) {
+        if(error.response.status === 401)(
+          navigate('/login', { state: { from: `/movie/${id}` }, replace: true })
+                )
         console.error('Error fetching movie details:', error);
       }
     };

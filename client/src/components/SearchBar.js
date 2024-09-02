@@ -26,6 +26,7 @@ const SearchBar = () => {
       const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/search`, {
         params: { query, type: 'movie' }
       });
+      console.log('Suggestions Data:', response.data); // Inspect the data
       setSuggestions(response.data);
     } catch (error) {
       console.error('Error fetching suggestions:', error);
@@ -60,11 +61,13 @@ const SearchBar = () => {
     setSearchResults([suggestion]);
     setNoResults(false);
   };
-const handleKeyPress=(e)=>{
-    if(e.key==='Enter'){
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
       handleSearch();
     }
-}
+  };
+
   return (
     <div className={`search-bar-container ${theme}`}>
       <input
@@ -84,7 +87,7 @@ const handleKeyPress=(e)=>{
               onClick={() => handleSuggestionClick(suggestion)}
               className="search-suggestion"
             >
-              {suggestion.Title}
+              {suggestion.title} {/* Updated property */}
             </li>
           ))}
         </ul>
@@ -100,11 +103,11 @@ const handleKeyPress=(e)=>{
               {searchResults.map((movie) => (
                 <div key={movie.imdbID} className="result-card">
                   <Link to={`/movie/${movie.imdbID}`} className="result-link">
-                    <h2 className="result-title">{movie.Title}</h2>
-                    <p className="result-year">{movie.Year}</p>
+                    <h2 className="result-title">{movie.title}</h2> {/* Updated property */}
+                    <p className="result-year">{movie.year}</p> {/* Updated property */}
                     <img
-                      src={movie.Poster}
-                      alt={movie.Title}
+                      src={movie.poster}
+                      alt={movie.title}
                       className="result-poster"
                     />
                   </Link>

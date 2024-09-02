@@ -27,19 +27,11 @@ const Header = () => {
   const handleDropdownToggle = (option) => {
     setDropdownOpen(dropdownOpen === option ? null : option);
   };
-  // const token = Cookies.get('token');
   
   const handleLoginClick = () => {
-    navigate('/login');
+    navigate('/login' , {replace:true});
   };
-  // const logout = async () => {
-  //   try {
-  //     await axios.post('/api/auth/logout'); // Make sure you implement this route in your backend
-  //     navigate('/');
-  //   } catch (error) {
-  //     console.error('Logout error:', error);
-  //   }
-  // };/
+ 
 
   const handleLogoutClick = async () => {
     await logout();

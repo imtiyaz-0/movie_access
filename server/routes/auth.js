@@ -53,12 +53,12 @@ router.post('/register', [
     const token = jwt.sign(payload, secretKey, { expiresIn: '1h' });
 
     res.cookie('token', token, {
-      httpOnly: true, 
-      secure: process.env.NODE_ENV === 'production', 
-      sameSite: 'Strict',
-      maxAge: 3600000
+      httpOnly: true,
+      secure:false,
+      sameSite: 'lax',
+      maxAge: 360000
     });
-
+   
     res.status(201).json({ message: 'User registered successfully' });
   } catch (error) {
     logger.error('Error registering user:', error);
@@ -107,14 +107,14 @@ router.post('/login', async (req, res) => {
 
     const payload = { userId: user._id };
     const token = jwt.sign(payload, secretKey, { expiresIn: '1h' });
-
+    // console.log('Generated Token:', token);
     res.cookie('token', token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'Strict',
-      maxAge: 3600000
+      secure:false,
+      sameSite: 'lax',
+      maxAge: 360000
     });
-
+   
     res.status(200).json({ message: 'Login successful' });
   } catch (error) {
     logger.error('Error during login:', error);

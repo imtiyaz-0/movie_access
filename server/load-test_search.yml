@@ -1,0 +1,26 @@
+config:
+  target: 'http://localhost:5001'  
+  phases:
+    - duration: 60 
+      arrivalRate: 100 
+  variables:
+    query:
+      - "Inception"
+      - "Avengers"
+      - "Batman"
+      - "Matrix"
+      - "Titanic"
+      - "Jurassic Park"
+    type:
+      - "movie"
+      - "series"
+  defaults:
+    headers:
+      Content-Type: "application/json"
+scenarios:
+  - flow:
+      - get:
+          url: "/api/movies/search"
+          qs:
+            query: "{{ query }}"
+            type: "{{ type }}"
