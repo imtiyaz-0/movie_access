@@ -11,7 +11,7 @@ const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
   const { theme } = useContext(ThemeContext); 
   const navigate = useNavigate();
-  const {  setIsAuthenticated } = useContext(AuthContext);
+  
 
   useEffect(() => {
     const fetchMovieDetails = async () => {
@@ -19,7 +19,6 @@ const MovieDetails = () => {
         const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/movie/${id}` , {  withCredentials: true  });
         setMovie(response.data);
         console.log (response.data);
-        setIsAuthenticated(true);
       } catch (error) {
         if(error.response.status === 401)(
           navigate('/login', { state: { from: `/movie/${id}` }, replace: true })

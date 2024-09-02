@@ -65,26 +65,13 @@ router.post('/register', [
     res.status(500).json({ message: 'Server error' });
   }
 });
-router.get('/verify', async (req, res) => {
-  try {
-    const token = req.cookies.token;
-    if (!token) {
-      return res.status(401).json({ message: 'No token provided' });
-    }
 
-    const decoded = jwt.verify(token, secretKey);
-
-    res.status(200).json({ message: 'Token is valid', user: decoded });
-  } catch (error) {
-    if (error.name === 'JsonWebTokenError') {
-      return res.status(401).json({ message: 'Invalid token' });
-    } else if (error.name === 'TokenExpiredError') {
-      return res.status(401).json({ message: 'Token expired' });
-    } else {
-      console.error('Verification error:', error);
-      res.status(500).json({ message: 'Internal Server Error' });
-    }
+router.get('/check-session', (req, res) => {
+  if (req.cookies.token) {
+    
+    return res.json({ isAuthenticated: true });
   }
+  return res.json({ isAuthenticated: false });
 });
 
 
