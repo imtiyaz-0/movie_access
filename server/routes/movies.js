@@ -107,6 +107,7 @@ const fetchRecentMoviesFromAPI = async () => {
 
 const ensureRecentMoviesUpdated = async (req, res, next) => {
   try {
+    console.log('task 2')
 
     const fifteenMinutesAgo = moment().subtract(15, 'minutes');
     const cachedMovies = await Movie.find({
@@ -125,6 +126,7 @@ const ensureRecentMoviesUpdated = async (req, res, next) => {
 
 router.get('/recent', ensureRecentMoviesUpdated, async (req, res) => {
   try {
+    console.log('task 1')
     const recentMovies = await Movie.find().sort({ releaseDate: -1 }).limit(12);
     res.json(recentMovies);
   } catch (error) {

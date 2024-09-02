@@ -13,7 +13,7 @@ const MovieList = () => {
   const fetchRecentMovies = async () => {
     try {
       const response = await axios.get(`http://localhost:${process.env.REACT_APP_PORT}/api/movies/recent`);
-    
+      console.log('Recent Movies:', response.data);
       setMovies(response.data);
       setLoading(false);
     } catch (error) {
@@ -46,14 +46,6 @@ const MovieList = () => {
           ))
         )}
       </div>
-
-      {/* {selectedMovie && (
-        <div className="selected-movie-details">
-          <h1 className="movie-title">{selectedMovie.title}</h1>
-          <p><strong>Release Date:</strong> {new Date(moment(selectedMovie.releaseDate).format('MMMM Do YYYY')).toLocaleDateString()}</p>
-          <img src={selectedMovie.poster} alt={selectedMovie.title} className="movie-poster" />
-        </div>
-      )} */}
     </div>
   );
 };
