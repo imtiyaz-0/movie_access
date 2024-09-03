@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useCallback } from 'react';
 import axios from 'axios';
-import { Link , useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import LoadingSpinner from './LoadingSpinner';
 import { ThemeContext } from '../context/ThemeContext';
 import '../styles/SearchBar.css';
@@ -14,15 +14,16 @@ const SearchBar = () => {
   const { theme } = useContext(ThemeContext); 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (query.length > 2) {
-      fetchSuggestions();
-    } else {
-      setSuggestions([]);
-    }
-  }, [query]);
+  const debounce = (func, wait) => {
+    let timeout;
+    return function (...args) {
+      const context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+  };
 
-  const fetchSuggestions = async () => {
+  const fetchSuggestions = useCallback(debounce(async (query) => {
     try {
       const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/movies/search`, {
         params: { query, type: 'movie' }
@@ -31,13 +32,22 @@ const SearchBar = () => {
     } catch (error) {
       console.error('Error fetching suggestions:', error);
     }
-  };
+  }, 700), []);
+
+  useEffect(() => {
+    if (query.length > 2) {
+      fetchSuggestions(query);
+    } else {
+      setSuggestions([]);
+    }
+  }, [query, fetchSuggestions]);
+
   const handleSearch = async () => {
     setNoResults(false);
     if (!query) return;
     setLoading(true);
     try {
-         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/movies/search`, {
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/movies/search`, {
         params: { query, type: 'movie' }
       });
       if (response.data.length === 0) {
@@ -57,7 +67,7 @@ const SearchBar = () => {
   const handleSuggestionClick = (suggestion) => {
     setQuery('');
     setSuggestions([]);
-     navigate(`/movie/${suggestion.imdbID}`);
+    navigate(`/movie/${suggestion.imdbID}`);
   };
 
   const handleKeyPress = (e) => {
