@@ -156,7 +156,7 @@ router.get('/search', async (req, res) => {
 });
 
 
-router.get('/movie/:id',authMiddleware, async (req, res) => {
+router.get('/movie/:id', authMiddleware, async (req, res) => {
   const { id } = req.params;
 
   try {
@@ -169,38 +169,42 @@ router.get('/movie/:id',authMiddleware, async (req, res) => {
 
     const api1Data = response1.status === 'fulfilled' ? response1.value.data : {};
     const api2Data = response2.status === 'fulfilled' ? response2.value.data : {};
-
+    
+    if (!api1Data || !api2Data || (!api1Data.Title && !api2Data.title)) {
+      return res.status(404).json({ message: 'No such movie present' });
+    }
     const Normalized = {
-      Title: api1Data.Title || api2Data.title,
-      Year: api1Data.Year || api2Data.release_date.split('-')[0],
-      Rated: api1Data.Rated || (api2Data.adult ? 'Rated' : 'Unrated'),
-      Released: api1Data.Released || api2Data.release_date,
-      Runtime: api1Data.Runtime || `${api2Data.runtime} min`,
-      Genre: api1Data.Genre || api2Data.genres.map(genre => genre.name).join(', '),
-      Director: api1Data.Director || (api2Data.production_companies.length > 0 ? api2Data.production_companies.map(company => company.name).join(', ') : 'N/A'),
+      Title: api1Data.Title || api2Data.title || 'N/A',
+      Year: api1Data.Year || api2Data.release_date?.split('-')[0] || 'N/A',
+      Rated: api1Data.Rated || (api2Data.adult ? 'Rated' : 'Unrated') || 'N/A',
+      Released: api1Data.Released || api2Data.release_date || 'N/A',
+      Runtime: api1Data.Runtime || `${api2Data.runtime || 'N/A'} min`,
+      Genre: api1Data.Genre || api2Data.genres?.map(genre => genre.name).join(', ') || 'N/A',
+      Director: api1Data.Director || (api2Data.production_companies?.length > 0 ? api2Data.production_companies.map(company => company.name).join(', ') : 'N/A'),
       Writer: api1Data.Writer || 'N/A',
       Actors: api1Data.Actors || 'N/A',
-      Plot: api1Data.Plot || api2Data.overview,
-      Language: api1Data.Language || api2Data.spoken_languages.map(lang => lang.name).join(', '),
-      Country: api1Data.Country || api2Data.production_countries.map(country => country.name).join(', '),
+      Plot: api1Data.Plot || api2Data.overview || 'N/A',
+      Language: api1Data.Language || api2Data.spoken_languages?.map(lang => lang.name).join(', ') || 'N/A',
+      Country: api1Data.Country || api2Data.production_countries?.map(country => country.name).join(', ') || 'N/A',
       Awards: api1Data.Awards || 'N/A',
       Metascore: api1Data.Metascore || 'N/A',
-      imdbRating: api1Data.imdbRating || api2Data.vote_average,
-      imdbVotes: api1Data.imdbVotes || api2Data.vote_count,
-      imdbID: api1Data.imdbID || api2Data.imdb_id,
+      imdbRating: api1Data.imdbRating || api2Data.vote_average || 'N/A',
+      imdbVotes: api1Data.imdbVotes || api2Data.vote_count || 'N/A',
+      imdbID: api1Data.imdbID || api2Data.imdb_id || 'N/A',
       Type: api1Data.Type || 'movie',
       DVD: api1Data.DVD || 'N/A',
       BoxOffice: api1Data.BoxOffice || 'N/A',
       Production: api1Data.Production || 'N/A',
-      Website: api1Data.Website || api2Data.homepage,
-      Poster: api1Data.Poster || api2Data.poster_path ? `https://image.tmdb.org/t/p/w300${api2Data.poster_path}` : 'N/A'
+      Website: api1Data.Website || api2Data.homepage || 'N/A',
+      Poster: api1Data.Poster || (api2Data.poster_path ? `https://image.tmdb.org/t/p/w300${api2Data.poster_path}` : 'N/A')
     };
 
     res.json(Normalized);
   } catch (error) {
-    logger.error('Error fetching movie details:', error);
+    logger.error('Error fetching movie details:', error.message);
     res.status(500).send('Error fetching movie details');
   }
 });
+
 
 module.exports = router;

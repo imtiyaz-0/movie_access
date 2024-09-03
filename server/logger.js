@@ -1,7 +1,6 @@
 const winston = require('winston');
 require('winston-daily-rotate-file');
 
-// Transport for request logs
 const requestLogTransport = new winston.transports.DailyRotateFile({
   filename: 'requests-%DATE%.log',
   dirname: './logs/requests',
@@ -11,7 +10,6 @@ const requestLogTransport = new winston.transports.DailyRotateFile({
   zippedArchive: true
 });
 
-// Transport for general application logs
 const generalLogTransport = new winston.transports.DailyRotateFile({
   filename: 'app-%DATE%.log',
   dirname: './logs',
@@ -41,7 +39,6 @@ const logger = winston.createLogger({
   ]
 });
 
-// Separate logger for requests
 const requestLogger = winston.createLogger({
   level: 'info',
   format: winston.format.combine(
