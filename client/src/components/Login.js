@@ -13,7 +13,7 @@ const Login = () => {
   const location = useLocation();
   const [forPass , setForPass] = useState(false);
   const { theme } = useContext(ThemeContext);
-  const {  setIsAuthenticated } = useContext(AuthContext);
+  const { isAuthenticated,  setIsAuthenticated } = useContext(AuthContext);
 
   const validateForm = () => {
     if (!username || !password) {
@@ -49,7 +49,6 @@ const Login = () => {
       const response = await axios.post(`http://localhost:${process.env.REACT_APP_PORT}/api/auth/google`, {
         token: credentialResponse.credential,
       });
-      localStorage.setItem('token', response.data.token);
       const from = location.state?.from || '/';
       navigate(from, { replace: true });
     } catch (error) {
@@ -59,11 +58,10 @@ const Login = () => {
   };
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (token) {
+    if (isAuthenticated) {
       navigate('/', { replace: true });
     }
-  }, [navigate]);
+  },[isAuthenticated,navigate]);
 
   const moveToRegister = () => {
     navigate('/register', { state: { from: location.state?.from } });

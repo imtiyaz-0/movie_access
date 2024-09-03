@@ -93,12 +93,12 @@ const styles = {
     color: theme === 'dark' ? '#f4f4f4' : '#333',
   }),
   poster: {
-    width: '500px',
-    height: '600px',
-    marginLeft: '50px',
-    marginBottom: '20px',
-    borderRadius: '8px',
-    marginRight: '50px',
+    width: '100%',
+  maxWidth: '500px', 
+  height: 'auto',
+  margin: '0 auto 20px auto',
+  borderRadius: '8px',
+  display: 'block',
   },
   details: (theme) => ({
     textAlign: 'center',

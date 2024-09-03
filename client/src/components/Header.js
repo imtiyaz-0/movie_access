@@ -23,6 +23,7 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+  
 
   const handleDropdownToggle = (option) => {
     setDropdownOpen(dropdownOpen === option ? null : option);
@@ -46,6 +47,8 @@ const Header = () => {
       backgroundColor: theme === 'light' ? '#f0f0f0' : '#333',
       borderBottom: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
       color: theme === 'light' ? '#000' : '#fff',
+      boxSizing: 'border-box', // Ensure padding does not affect width
+      flexWrap: 'wrap', 
     },
     themeToggle: {
       marginRight: '20px',
@@ -59,14 +62,17 @@ const Header = () => {
     navbar: {
       display: 'flex',
       alignItems: 'center',
+      flexGrow: 1, 
+      justifyContent: 'flex-end', 
+      
     },
     dropdown: {
       position: 'relative',
       marginRight: '5px',
-      marginLeft:'10px'
+      marginLeft: '10px',
     },
     dropdownToggle: {
-     marginRight:'100px',
+      marginRight: '100px',
       background: 'none',
       border: 'none',
       cursor: 'pointer',
@@ -74,10 +80,24 @@ const Header = () => {
       padding: '10px',
       color: theme === 'light' ? '#000' : '#fff',
     },
-    dropdownMenu: {
+    dropdownMenuMovies: {
       position: 'absolute',
       top: '100%',
       left: '0',
+      backgroundColor: theme === 'light' ? '#fff' : '#555',
+      border: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
+      boxShadow: `0 4px 8px rgba(0,0,0,0.1)`,
+      display: 'flex',
+      flexDirection: 'column',
+      padding: '10px',
+      width: '200px',
+      zIndex: '1000',
+    },
+    dropdownMenuProfile: {
+      position: 'absolute',
+      top: '100%',
+      left: '0',
+      transform: 'translateX(-50%)', // Center the profile dropdown to the left
       backgroundColor: theme === 'light' ? '#fff' : '#555',
       border: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
       boxShadow: `0 4px 8px rgba(0,0,0,0.1)`,
@@ -92,7 +112,6 @@ const Header = () => {
       color: theme === 'light' ? '#333' : '#eee',
       padding: '8px 0',
     },
-
     dropdownMenuItemHover: {
       backgroundColor: theme === 'light' ? '#f0f0f0' : '#666',
     },
@@ -106,9 +125,36 @@ const Header = () => {
       padding: '10px 20px',
       cursor: 'pointer',
       borderRadius: '4px',
+      marginLeft: '10px', // Add margin to keep space from other elements
+      marginRight: '10px', // Ensure it does not overflow
+      boxSizing: 'border-box', // Ensure padding does not affect width
     },
-    
+    '@media (max-width: 480px)': {
+      header: {
+        padding: '10px',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+      },
+      themeToggle: {
+        marginRight: '0',
+        marginBottom: '10px',
+      },
+      navbar: {
+        justifyContent: 'space-between',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+      },
+      dropdownToggle: {
+        marginRight: '0',
+        marginBottom: '10px',
+      },
+      loginButton: {
+        marginLeft: '0',
+        marginRight: '0',
+        width: '100%', // Full width on small screens
+      },}
   };
+  
 
   return (
     <header style={styles.header}>
@@ -125,7 +171,7 @@ const Header = () => {
             Movies <span style={styles.arrow}>&#9662;</span>
           </button>
           {dropdownOpen === 'movies' && (
-          <div style={styles.dropdownMenu} ref={dropdownRef}>
+          <div style={styles.dropdownMenuMovies} ref={dropdownRef}>
           <Link to="/" style={styles.dropdownMenuItem}>Home</Link>
           <Link to="/top-rated" style={styles.dropdownMenuItem}>Top Rated</Link>
           <Link to="/genres" style={styles.dropdownMenuItem}>Genres</Link>
@@ -144,7 +190,7 @@ const Header = () => {
             Profile <span style={styles.arrow}>&#9662;</span>
           </button>
           {dropdownOpen === 'profile' && (
-             <div style={styles.dropdownMenu} ref={dropdownRef}>
+             <div style={styles.dropdownMenuProfile} ref={dropdownRef}>
              <Link to="/profile" style={styles.dropdownMenuItem}>View Profile</Link>
              <Link to="/settings" style={styles.dropdownMenuItem}>Settings</Link>
              <button onClick={handleLogoutClick} style={styles.dropdownMenuItem}>Logout</button>
