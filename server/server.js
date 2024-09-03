@@ -6,6 +6,8 @@ const authRoutes = require('./routes/auth');
 const logger = require('./logger');
 const swaggerSetup = require('./swagger');
 const cookieParser = require('cookie-parser');
+require('./create-logs-directory');
+
 
 require('dotenv').config();
 

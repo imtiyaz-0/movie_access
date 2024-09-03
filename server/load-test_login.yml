@@ -1,0 +1,22 @@
+config:
+  target: 'http://localhost:5001'  
+  phases:
+    - duration: 60  
+      arrivalRate: 10 
+  payload:
+    path: "users.csv"
+    fields:
+      - "email"      
+      - "username"  
+      - "password"   
+  defaults:
+    headers:
+      content-type: "application/json"
+
+scenarios:
+  - flow:
+      - post:
+          url: "/api/auth/login"  
+          json:
+            username: "{{ username }}"
+            password: "{{ password }}"
