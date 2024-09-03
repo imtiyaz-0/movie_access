@@ -47,7 +47,7 @@ const Header = () => {
       backgroundColor: theme === 'light' ? '#f0f0f0' : '#333',
       borderBottom: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
       color: theme === 'light' ? '#000' : '#fff',
-      boxSizing: 'border-box', // Ensure padding does not affect width
+      boxSizing: 'border-box', 
       flexWrap: 'wrap', 
     },
     themeToggle: {
@@ -97,7 +97,7 @@ const Header = () => {
       position: 'absolute',
       top: '100%',
       left: '0',
-      transform: 'translateX(-50%)', // Center the profile dropdown to the left
+      transform: 'translateX(-50%)', 
       backgroundColor: theme === 'light' ? '#fff' : '#555',
       border: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
       boxShadow: `0 4px 8px rgba(0,0,0,0.1)`,
@@ -125,9 +125,9 @@ const Header = () => {
       padding: '10px 20px',
       cursor: 'pointer',
       borderRadius: '4px',
-      marginLeft: '10px', // Add margin to keep space from other elements
-      marginRight: '10px', // Ensure it does not overflow
-      boxSizing: 'border-box', // Ensure padding does not affect width
+      marginLeft: '10px', 
+      marginRight: '10px', 
+      boxSizing: 'border-box', 
     },
     '@media (max-width: 480px)': {
       header: {
@@ -151,7 +151,7 @@ const Header = () => {
       loginButton: {
         marginLeft: '0',
         marginRight: '0',
-        width: '100%', // Full width on small screens
+        width: '100%', 
       },}
   };
   
