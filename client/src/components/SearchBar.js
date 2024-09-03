@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 import LoadingSpinner from './LoadingSpinner';
 import { ThemeContext } from '../context/ThemeContext';
 import '../styles/SearchBar.css';
@@ -12,6 +12,7 @@ const SearchBar = () => {
   const [loading, setLoading] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
   const { theme } = useContext(ThemeContext); 
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (query.length > 2) {
@@ -31,7 +32,6 @@ const SearchBar = () => {
       console.error('Error fetching suggestions:', error);
     }
   };
-
   const handleSearch = async () => {
     setNoResults(false);
     if (!query) return;
@@ -57,8 +57,7 @@ const SearchBar = () => {
   const handleSuggestionClick = (suggestion) => {
     setQuery('');
     setSuggestions([]);
-    setSearchResults([suggestion]);
-    setNoResults(false);
+     navigate(`/movie/${suggestion.imdbID}`);
   };
 
   const handleKeyPress = (e) => {
@@ -86,7 +85,7 @@ const SearchBar = () => {
               onClick={() => handleSuggestionClick(suggestion)}
               className="search-suggestion"
             >
-              {suggestion.title} {/* Updated property */}
+              {suggestion.title} 
             </li>
           ))}
         </ul>
@@ -102,8 +101,8 @@ const SearchBar = () => {
               {searchResults.map((movie) => (
                 <div key={movie.imdbID} className="result-card">
                   <Link to={`/movie/${movie.imdbID}`} className="result-link">
-                    <h2 className="result-title">{movie.title}</h2> {/* Updated property */}
-                    <p className="result-year">{movie.year}</p> {/* Updated property */}
+                    <h2 className="result-title">{movie.title}</h2> 
+                    <p className="result-year">{movie.year}</p>
                     <img
                       src={movie.poster}
                       alt={movie.title}
