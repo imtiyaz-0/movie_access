@@ -20,7 +20,10 @@ const MovieDetails = () => {
         setMovie(response.data);
         console.log (response.data);
       } catch (error) {
-        if(error.response.status === 401)(
+        if(error.response.status === 404){
+          navigate('*');
+        }
+       else  if(error.response.status === 401)(
           navigate('/login', { state: { from: `/movie/${id}` }, replace: true })
                 )
         console.error('Error fetching movie details:', error);

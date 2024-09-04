@@ -91,13 +91,11 @@ const Header = () => {
       flexDirection: 'column',
       padding: '10px',
       width: '200px',
-      zIndex: '1000',
     },
     dropdownMenuProfile: {
       position: 'absolute',
       top: '100%',
-      left: '0',
-      transform: 'translateX(-50%)', 
+      right: '30px',
       backgroundColor: theme === 'light' ? '#fff' : '#555',
       border: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
       boxShadow: `0 4px 8px rgba(0,0,0,0.1)`,
@@ -105,16 +103,13 @@ const Header = () => {
       flexDirection: 'column',
       padding: '10px',
       width: '200px',
-      zIndex: '1000',
     },
     dropdownMenuItem: {
       textDecoration: 'none',
       color: theme === 'light' ? '#333' : '#eee',
       padding: '8px 0',
     },
-    dropdownMenuItemHover: {
-      backgroundColor: theme === 'light' ? '#f0f0f0' : '#666',
-    },
+   
     arrow: {
       marginLeft: '5px',
     },

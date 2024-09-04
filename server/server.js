@@ -3,15 +3,22 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const movieRoutes = require('./routes/movies');
 const authRoutes = require('./routes/auth');
-const {logger,requestLogger} = require('./logger');
+const { logger, requestLogger } = require('./logger');
 const swaggerSetup = require('./swagger');
 const cookieParser = require('cookie-parser');
+const rateLimit = require('express-rate-limit'); 
 require('./create-logs-directory');
-
 
 require('dotenv').config();
 
 const app = express();
+
+const apiLimiter = rateLimit({
+  windowMs: 10 * 60 * 1000, 
+  max: 50, 
+  message: 'Too many requests from this IP, please try again later.',
+});
+
 app.use((req, res, next) => {
   const start = Date.now();
   const { method, url } = req;
@@ -25,13 +32,16 @@ app.use((req, res, next) => {
 
   next();
 });
+
 const corsOptions = {
   origin: 'http://localhost:3000',
-  credentials: true, 
+  credentials: true,
 };
 app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
+
+app.use(apiLimiter);
 
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => logger.info('MongoDB connected'))
@@ -45,4 +55,4 @@ swaggerSetup(app);
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
 
- module.exports = app;  
+module.exports = app;
