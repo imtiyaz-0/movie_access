@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const Movie = require('../models/Movie');
 const router = express.Router();
-const logger = require('../logger');
+const { logger } = require('../logger');
 const moment = require('moment');
 const authMiddleware = require('../middleware/authMiddleware');
 
@@ -158,6 +158,7 @@ router.get('/search', async (req, res) => {
 
 router.get('/movie/:id', authMiddleware, async (req, res) => {
   const { id } = req.params;
+  
 
   try {
     const [response1, response2] = await Promise.allSettled([
@@ -173,7 +174,7 @@ router.get('/movie/:id', authMiddleware, async (req, res) => {
     if (!api1Data || !api2Data || (!api1Data.Title && !api2Data.title)) {
       return res.status(404).json({ message: 'No such movie present' });
     }
-    const Normalized = {
+     const Normalized = {
       Title: api1Data.Title || api2Data.title || 'N/A',
       Year: api1Data.Year || api2Data.release_date?.split('-')[0] || 'N/A',
       Rated: api1Data.Rated || (api2Data.adult ? 'Rated' : 'Unrated') || 'N/A',

@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 const { body, validationResult } = require('express-validator');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('../models/User'); 
-const logger = require('../logger');
+const { logger } = require('../logger');
 
 const router = express.Router();
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
@@ -88,7 +88,7 @@ router.post('/login', async (req, res) => {
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-      logger.warn(`Login attempt with invalid password for username: ${username}`);
+      logger.error(`Login attempt with invalid password for username: ${username}`);
       return res.status(400).json({ message: 'Invalid credentials' });
     }
 

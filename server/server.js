@@ -10,7 +10,6 @@ const rateLimit = require('express-rate-limit');
 require('./create-logs-directory');
 
 require('dotenv').config();
-
 const app = express();
 
 const apiLimiter = rateLimit({
