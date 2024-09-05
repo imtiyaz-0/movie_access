@@ -3,19 +3,29 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const movieRoutes = require('./routes/movies');
 const authRoutes = require('./routes/auth');
+const profileRoutes = require('./routes/profile')
 const { logger, requestLogger } = require('./logger');
 const swaggerSetup = require('./swagger');
 const cookieParser = require('cookie-parser');
-const rateLimit = require('express-rate-limit'); 
+const { RateLimiterMemory } = require('rate-limiter-flexible'); 
 require('./create-logs-directory');
 
 require('dotenv').config();
 const app = express();
+app.use('/uploads', express.static('uploads'));
 
-const apiLimiter = rateLimit({
-  windowMs: 10 * 60 * 1000, 
-  max: 50, 
-  message: 'Too many requests from this IP, please try again later.',
+const rateLimiter = new RateLimiterMemory({
+  points: 50, 
+  duration: 10 * 60, 
+});
+
+app.use(async (req, res, next) => {
+  try {
+    await rateLimiter.consume(req.ip); 
+    next();
+  } catch (rejRes) {
+    res.status(429).send('Too many requests from this IP, please try again later.');
+  }
 });
 
 app.use((req, res, next) => {
@@ -40,14 +50,13 @@ app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.json());
 
-app.use(apiLimiter);
-
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => logger.info('MongoDB connected'))
   .catch(err => logger.info(err));
 
 app.use('/api/movies', movieRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/profile', profileRoutes);
 
 swaggerSetup(app);
 

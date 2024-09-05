@@ -34,7 +34,7 @@ const Login = () => {
       const from = location.state?.from || '/';
       navigate(from, { replace: true });
     } catch (error) {
-      if (error.response && error.response.status === 400) {
+      if (error.response && error.response.status === 401) {
         setError('Incorrect username or password');
         setForPass(true);
       } else {

@@ -8,11 +8,82 @@ const { body, validationResult } = require('express-validator');
 const { OAuth2Client } = require('google-auth-library');
 const User = require('../models/User'); 
 const { logger } = require('../logger');
-
+const multer = require('multer');
+const path = require('path');
 const router = express.Router();
 const client = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
 const secretKey = process.env.JWT_SECRET_KEY;
+const fs = require('fs');
 
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, 'uploads/');
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + path.extname(file.originalname));
+  },
+});
+
+const upload = multer({ storage });
+
+router.get('/profile', async (req, res) => {
+  try {
+    const token = req.cookies.token;
+
+    if (!token) {
+      return res.status(401).json({ message: 'No token provided, authorization denied' });
+    }
+
+    const decoded = jwt.verify(token, secretKey); 
+
+    const userId = decoded.userId;  
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    res.json(user);
+  } catch (error) {
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+
+router.post('/profile/upload-photo', upload.single('photo'), async (req, res) => {
+  try {
+    const token = req.cookies.token;
+
+    if (!token) {
+      return res.status(401).json({ message: 'No token provided, authorization denied' });
+    }
+
+    const decoded = jwt.verify(token, secretKey); 
+
+    const userId = decoded.userId;  
+        const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    if (user.photoUrl) {
+      const oldPhotoPath = path.join(__dirname, '../uploads', path.basename(user.photoUrl));
+      fs.unlink(oldPhotoPath, (err) => {
+        if (err) {
+          console.error('Error deleting old photo:', err);
+        }
+      });
+    }
+
+    const photoUrl = `http://localhost:5001/uploads/${req.file.filename}`;
+    user.photoUrl = photoUrl;
+    await user.save();
+
+    res.json({ message: 'Photo uploaded successfully', photoUrl });
+  } catch (error) {
+    console.error('Error uploading photo:', error.message);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
 
 router.post('/logout', (req, res) => {
   res.cookie('token', '', {
@@ -56,7 +127,7 @@ router.post('/register', [
       httpOnly: true,
       secure:false,
       sameSite: 'lax',
-      maxAge: 360000
+      maxAge: 3600000
     });
    
     res.status(201).json({ message: 'User registered successfully' });
@@ -83,13 +154,13 @@ router.post('/login', async (req, res) => {
     const user = await User.findOne({ username });
     if (!user) {
       logger.warn(`Login attempt with invalid username: ${username}`);
-      return res.status(400).json({ message: 'Invalid credentials' });
+      return res.status(401).json({ message: 'Invalid credentials' });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       logger.error(`Login attempt with invalid password for username: ${username}`);
-      return res.status(400).json({ message: 'Invalid credentials' });
+      return res.status(401).json({ message: 'Invalid credentials' });
     }
 
     const payload = { userId: user._id };
@@ -98,7 +169,7 @@ router.post('/login', async (req, res) => {
       httpOnly: true,
       secure:false,
       sameSite: 'lax',
-      maxAge: 360000
+      maxAge: 3600000
     });
    
     res.status(200).json({ message: 'Login successful' });
@@ -146,7 +217,7 @@ router.post('/request-reset', async (req, res) => {
   }
   try {
     const user = await User.findOne({ email });
-    if (!user) return res.status(400).json({ message: 'No user with that email' });
+    if (!user) return res.status(401).json({ message: 'No user with that email' });
     const resetToken = crypto.randomBytes(20).toString('hex');
     user.resetPasswordToken = resetToken;
     user.resetPasswordExpires = Date.now() + 3600000; 
@@ -204,5 +275,43 @@ router.post('/reset/:token', async (req, res) => {
     res.status(500).json({ message: 'Error resetting password' });
   }
 });
+
+router.delete('/delete-account', async (req, res) => {
+  try {
+    const token = req.cookies.token;
+
+    if (!token) {
+      return res.status(401).json({ message: 'No token provided, authorization denied' });
+    }
+
+    const decoded = jwt.verify(token, secretKey); 
+
+    const userId = decoded.userId; 
+   
+    const deletedUser = await User.findByIdAndDelete(userId);
+    if (!deletedUser) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+    res.cookie('token', '', {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'Strict',
+      maxAge: 0
+    });
+
+    res.status(200).json({ message: 'Account deleted successfully' });
+  } catch (error) {
+    console.error('Error deleting account:', error);
+
+    if (error.name === 'JsonWebTokenError') {
+      return res.status(403).json({ message: 'Invalid token' });
+    } else if (error.name === 'TokenExpiredError') {
+      return res.status(403).json({ message: 'Token expired' });
+    }
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+
+
 
 module.exports = router;

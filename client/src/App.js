@@ -11,7 +11,7 @@ import Header from './components/Header';
 import PasswordResetRequest from './components/PasswordResetRequest';
 import PasswordReset from './components/PasswordReset';
 import NotFound from './components/NotFound';
-
+import ViewProfile from './components/Profile'
 const App = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
@@ -26,6 +26,7 @@ const App = () => {
           <Route path="/movie/:id" element={<MovieDetails />} />
           <Route path="/request-reset" element={<PasswordResetRequest />} />
           <Route path="/reset/:token" element={<PasswordReset />} />
+          <Route path ="/Profile" element={<ViewProfile/>}/>
           <Route path="*" element={<NotFound />} /> 
         </Routes>
       </Router>

@@ -9,7 +9,7 @@ const Header = () => {
   const [dropdownOpen, setDropdownOpen] = useState(null);
   const navigate = useNavigate();
   const dropdownRef = useRef(null); 
-  const { isAuthenticated, logout } = useContext(AuthContext);
+  const { isAuthenticated, logout, deleteAccount } = useContext(AuthContext);
 
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -23,21 +23,27 @@ const Header = () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-  
 
   const handleDropdownToggle = (option) => {
     setDropdownOpen(dropdownOpen === option ? null : option);
   };
-  
+
   const handleLoginClick = () => {
-    navigate('/login' , {replace:true});
+    navigate('/login', { replace: true });
   };
- 
 
   const handleLogoutClick = async () => {
     await logout();
     navigate('/');
   };
+
+  const handleDeleteAccountClick = async () => {
+    if (window.confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+      await deleteAccount();
+      navigate('/');
+    }
+  };
+
   const styles = {
     header: {
       display: 'flex',
@@ -47,8 +53,8 @@ const Header = () => {
       backgroundColor: theme === 'light' ? '#f0f0f0' : '#333',
       borderBottom: `1px solid ${theme === 'light' ? '#ddd' : '#444'}`,
       color: theme === 'light' ? '#000' : '#fff',
-      boxSizing: 'border-box', 
-      flexWrap: 'wrap', 
+      boxSizing: 'border-box',
+      flexWrap: 'wrap',
     },
     themeToggle: {
       marginRight: '20px',
@@ -62,9 +68,8 @@ const Header = () => {
     navbar: {
       display: 'flex',
       alignItems: 'center',
-      flexGrow: 1, 
-      justifyContent: 'flex-end', 
-      
+      flexGrow: 1,
+      justifyContent: 'flex-end',
     },
     dropdown: {
       position: 'relative',
@@ -109,7 +114,6 @@ const Header = () => {
       color: theme === 'light' ? '#333' : '#eee',
       padding: '8px 0',
     },
-   
     arrow: {
       marginLeft: '5px',
     },
@@ -120,9 +124,9 @@ const Header = () => {
       padding: '10px 20px',
       cursor: 'pointer',
       borderRadius: '4px',
-      marginLeft: '10px', 
-      marginRight: '10px', 
-      boxSizing: 'border-box', 
+      marginLeft: '10px',
+      marginRight: '10px',
+      boxSizing: 'border-box',
     },
     '@media (max-width: 480px)': {
       header: {
@@ -146,19 +150,19 @@ const Header = () => {
       loginButton: {
         marginLeft: '0',
         marginRight: '0',
-        width: '100%', 
-      },}
+        width: '100%',
+      },
+    },
   };
-  
 
   return (
     <header style={styles.header}>
       <button style={styles.themeToggle} onClick={toggleTheme}>
         Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
       </button>
-      
+
       <nav style={styles.navbar}>
-        <div style={styles.dropdown} >
+        <div style={styles.dropdown}>
           <button
             style={styles.dropdownToggle}
             onClick={() => handleDropdownToggle('movies')}
@@ -166,34 +170,37 @@ const Header = () => {
             Movies <span style={styles.arrow}>&#9662;</span>
           </button>
           {dropdownOpen === 'movies' && (
-          <div style={styles.dropdownMenuMovies} ref={dropdownRef}>
-          <Link to="/" style={styles.dropdownMenuItem}>Home</Link>
-          <Link to="/top-rated" style={styles.dropdownMenuItem}>Top Rated</Link>
-          <Link to="/genres" style={styles.dropdownMenuItem}>Genres</Link>
-          <Link to="/more" style={{ ...styles.dropdownMenuItem, ...styles.dropdownMenuItemHover }}>
-              Click here for more details
-          </Link>
-      </div>
+            <div style={styles.dropdownMenuMovies} ref={dropdownRef}>
+              <Link to="/" style={styles.dropdownMenuItem}>Home</Link>
+              <Link to="/top-rated" style={styles.dropdownMenuItem}>Top Rated</Link>
+              <Link to="/genres" style={styles.dropdownMenuItem}>Genres</Link>
+              <Link to="/more" style={{ ...styles.dropdownMenuItem, ...styles.dropdownMenuItemHover }}>
+                Click here for more details
+              </Link>
+            </div>
           )}
         </div>
-{isAuthenticated && 
-        <div style={styles.dropdown}>
-          <button
-            style={styles.dropdownToggle}
-            onClick={() => handleDropdownToggle('profile')}
-          >
-            Profile <span style={styles.arrow}>&#9662;</span>
-          </button>
-          {dropdownOpen === 'profile' && (
-             <div style={styles.dropdownMenuProfile} ref={dropdownRef}>
-             <Link to="/profile" style={styles.dropdownMenuItem}>View Profile</Link>
-             <Link to="/settings" style={styles.dropdownMenuItem}>Settings</Link>
-             <button onClick={handleLogoutClick} style={styles.dropdownMenuItem}>Logout</button>
-         </div>
-          )}
-        </div>}
-{!isAuthenticated && 
-        <button onClick={handleLoginClick} style={styles.loginButton}>Login</button>}
+        {isAuthenticated && (
+          <div style={styles.dropdown}>
+            <button
+              style={styles.dropdownToggle}
+              onClick={() => handleDropdownToggle('profile')}
+            >
+              Profile <span style={styles.arrow}>&#9662;</span>
+            </button>
+            {dropdownOpen === 'profile' && (
+              <div style={styles.dropdownMenuProfile} ref={dropdownRef}>
+                <Link to="/Profile" style={styles.dropdownMenuItem}>View Profile</Link>
+                <Link to="/settings" style={styles.dropdownMenuItem}>Settings</Link>
+                <button onClick={handleLogoutClick} style={styles.dropdownMenuItem}>Logout</button>
+                <button onClick={handleDeleteAccountClick} style={styles.dropdownMenuItem}>Delete Account</button>
+              </div>
+            )}
+          </div>
+        )}
+        {!isAuthenticated && (
+          <button onClick={handleLoginClick} style={styles.loginButton}>Login</button>
+        )}
       </nav>
     </header>
   );

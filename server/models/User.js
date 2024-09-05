@@ -7,6 +7,10 @@ const UserSchema = new mongoose.Schema({
   googleId: { type: String },
   resetPasswordToken: { type: String },
   resetPasswordExpires: { type: Date },
+  photoUrl: {
+    type: String, 
+    default: 'http://localhost:5001/uploads/profile/default-profile.jpg', 
+  },
 });
 
 module.exports = mongoose.model('User', UserSchema);
